@@ -209,7 +209,6 @@ ol.category-breadcrumb {
 }
 
 #create-topic {
-  background-color: #28509F;
   border: none;
   color: $white;
   height: 40px;
@@ -225,7 +224,7 @@ ol.category-breadcrumb {
 .btn-primary {
   &:focus,
   &:hover {
-    background-color: $blue-light !important;
+    background-color: #28509F !important;
     color: $white;
   }
 }
@@ -347,7 +346,7 @@ nav.post-controls {
 }
 
 .btn-primary {
-  background: $purple;
+  background: #28509F;
 }
 
 .btn-small {
