@@ -415,7 +415,7 @@ a.button {
   flex-flow: column wrap;
 }
 
-.category-list tbody .category-title-link {
+.category-list tbody {
   display: flex !important;
   align-items: center;
   flex-direction: column-reverse;
@@ -431,4 +431,9 @@ a.button {
   margin: 0;
   border-radius: 8px;
   width: 25%;
+}
+
+.category-title-link {
+  display: flex;
+  flex-flow: column-reverse wrap;
 }
