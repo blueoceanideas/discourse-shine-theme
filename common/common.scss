@@ -300,7 +300,7 @@ body {
   /* Enable scrolling on the page. */
   overflow-y: auto;
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 2px;
+  perspective: 13px;
 }
 
 p {
@@ -460,7 +460,6 @@ a.button {
   /* Display and position the pseudo-element */
   content: " ";
   position: absolute;
-  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
@@ -477,7 +476,7 @@ a.button {
 
 .bg1::after {
   background-image: url($msba-connect-facets);
-  margin-top: 200px;
+  margin-top: 20vh;
 }
 
 
