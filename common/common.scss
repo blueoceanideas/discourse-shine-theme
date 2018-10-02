@@ -372,6 +372,7 @@ a.button {
 
   display: flex;
   justify-content: space-around;
+  margin-bottom: 75px;
   width: 100%;
 
   .login {
@@ -386,7 +387,7 @@ a.button {
 
 .search-form {
   color: $lrt-gray;
-  margin: 75px auto 15px;
+  margin: 0 auto 15px;
   padding-bottom: 150px;
   width: 100%;
   display: flex;
@@ -480,8 +481,6 @@ a.button {
   background-image: url($msba-connect-facets);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 10vh;
-  height: 100vh;
 }
 
 
