@@ -416,21 +416,19 @@ a.button {
 }
 
 .category-list tbody .category-title-link {
-  display: flex;
+  display: flex !important;
   align-items: center;
   flex-direction: column-reverse;
 }
 
 .category-list tbody {
   padding-top: 6px;
-  display: flex;
   flex-wrap: wrap;
 }
 
 .category-list tr {
   border: none !important;
-  margin: 6px;
+  margin: 0;
   border-radius: 8px;
-  flex: 1;
   width: 25%;
 }
