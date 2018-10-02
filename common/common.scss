@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i');
 @import 'common/foundation/variables';
+@import 'laruta';
 // -------------------------
 // Colors
 // -------------------------
@@ -279,12 +280,19 @@ a.mention-group {
 }
 
 // Laruta
+
+// Background gradient
 body {
   background: rgb(255,250,200);
   background: linear-gradient(180deg, rgba(255,250,200,1) 0%, rgba(255,255,255,0) 30%);
+  min-width: 320px;
 }
 
 .laruta-header {
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 
   h1 {
     color: green;
