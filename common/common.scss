@@ -340,8 +340,6 @@ a.button {
 // Components
 .laruta-header {
 
-  background-image: url($msba-connect-facets);
-
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -469,3 +467,9 @@ a.button {
   /* Keep the image from overlapping sibling elements. */
   z-index: -1;
 }
+
+.bg1::after {
+  background-image: url($msba-connect-facets);
+}
+
+
