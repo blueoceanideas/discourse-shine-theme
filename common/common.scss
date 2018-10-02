@@ -295,7 +295,7 @@ body {
 p {
   font-style: normal;
   font-weight: normal;
-  line-height: 24px;
+  line-height: 28px;
   font-size: 16px;
   text-align: center;
   color: $lrt-gray;
@@ -393,12 +393,19 @@ a.button {
   margin: 45px 15px;
 
   h2 {
-    color: darkblue;
+    color: #28509F;
+    font-size: 34px;
+    text-align: left;
   }
 
   a {
     background-color: darkblue;
     color: white;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 30px;
   }
 }
 
