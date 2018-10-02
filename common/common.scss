@@ -340,7 +340,7 @@ a.button {
 // Components
 .laruta-header {
 
-  background-image: url("../assets/images/msba-connect-facets.png");
+  background-image: url($msba-connect-facets);
 
   display: flex;
   flex-direction: column;
