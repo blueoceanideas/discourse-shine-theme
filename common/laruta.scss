@@ -1,0 +1,35 @@
+.laruta-header {
+
+  h1 {
+    color: green;
+  }
+
+  p {
+    color: gray;
+  }
+
+
+
+}
+
+.user-account-form {
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  .button {
+    border-radius: 4px;
+    color: white;
+    padding: 15px;
+  }
+
+  .login {
+    background-color: darkblue;
+  }
+
+  .join {
+    background-color: seagreen;
+  }
+
+}
