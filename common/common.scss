@@ -484,3 +484,20 @@ a.button {
 }
 
 
+#newToConnect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    box-shadow: 0 0 7px rgba(darkblue, .5);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: darkblue;
+    padding: 30px;
+  }
+}
+
