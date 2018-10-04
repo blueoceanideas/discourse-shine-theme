@@ -511,6 +511,41 @@ a.button {
 *  Category page
 *  (  )
  */
+.category-title-header {
+  background-color: #3E3E3D !important;
+}
+
+.category-title-contents {
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  h1 {
+    display: inline;
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  > div {
+    margin: 15px 0;
+  }
+}
+
+.category-heading {
+  display: none;
+}
+
+.edit-category {
+  display: inline-block;
+  width: 45%;
+}
+
+#create-topic {
+  display: inline-block;
+  width: 48%;
+}
+
 .category-boxes {
   width: 94%;
   margin: 0 3% 1.5em 3%;
