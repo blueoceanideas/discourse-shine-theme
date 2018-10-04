@@ -389,12 +389,12 @@ $border-radius: 4px;
  **/
 $shadow-color-default: rgba($black, 0.24);
 
-
+/****************************
+* Laruta Super Nav
+ **************************/
 .super-nav {
   // Default + Mobile Styles
   display: none;
-
-
 
   @media (min-width: 768px) {
     background-color: $gray-darker;
@@ -508,16 +508,10 @@ $shadow-color-default: rgba($black, 0.24);
   }
 }
 
-
-
-// WEBPACK FOOTER //
-// ./laruta-themosis-parent/assets/sass/components/_nav-super.scss
-
 // Variables
 $lrt-gray: #4F4F4F;
 
 // Tags
-
 p {
   font-style: normal;
   font-weight: normal;
@@ -553,21 +547,20 @@ a.button {
 }
 
 // Components
+#site-logo {
+  max-height: unset;
+  max-width: unset;
+}
+
 .alert-bootstrap-mode,
 .alert-too-few-topics {
   display: none;
 }
 
 .laruta-header {
-
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  /* Needed for children to be absolutely positioned relative to the parent. */
-  position: relative;
-  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
-  height: inherit;
 
   h1 {
     color: green;
@@ -589,7 +582,6 @@ a.button {
 }
 
 .user-account-form {
-
   display: flex;
   justify-content: space-around;
   margin-bottom: 75px;
@@ -602,7 +594,6 @@ a.button {
   .join {
     background: #048C86;
   }
-
 }
 
 .search-form {
@@ -622,7 +613,6 @@ a.button {
     margin: 0 15px;
     padding: 15px;
   }
-
 }
 
 #featuredGroups {
