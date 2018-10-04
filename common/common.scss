@@ -803,6 +803,7 @@ a.button {
   .topic-list-item {
     td {
       display: flex;
+      flex-direction: column;
     }
 
     .avatar {
