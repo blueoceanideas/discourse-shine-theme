@@ -532,8 +532,11 @@ a.button {
   }
 }
 
-.category-heading {
-  display: none;
+#navigation-bar,
+.category-heading,
+.category-breadcrumb,
+.category-notifications-button {
+  display: none !important;
 }
 
 .edit-category {
