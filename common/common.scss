@@ -804,6 +804,7 @@ a.button {
     td {
       display: flex;
       flex-direction: column;
+      padding: 15px;
     }
 
     .avatar {
@@ -820,7 +821,7 @@ a.button {
       margin-left: 25px;
       margin-top: -10px;
       display: flex;
-      flex-direction: column-reverse;
+      flex-direction: column;
       background-color: #ffd0387d;
       border-radius: 11px;
       border-top-left-radius: 0;
