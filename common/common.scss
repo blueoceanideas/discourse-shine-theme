@@ -761,7 +761,6 @@ a.button {
 
 }
 
-
 .category-boxes,
 .category-boxes-with-topics {
   flex-direction: column;
@@ -797,8 +796,61 @@ a.button {
     .featured-topics {
       padding: 0;
     }
+  }
+}
 
+.topic-list {
+  .topic-list-item {
+    td {
+      display: flex;
+    }
 
+    .avatar {
+      box-shadow: 0 0 7px grey;
+      position: relative;
+      z-index: 2;
+    }
+
+    .pull-left {
+
+    }
+
+    .right {
+      margin-left: 25px;
+      margin-top: -10px;
+      display: flex;
+      flex-direction: column-reverse;
+      background-color: #ffd0387d;
+      border-radius: 11px;
+      border-top-left-radius: 0;
+      position: relative;
+    }
+
+    .main-link {
+      order: 2;
+    }
+
+    .topic-item-stats {
+      order: 1;
+
+      .badge-category-bg {
+        display: none;
+      }
+
+      .category-name {
+        font-style: italic;
+      }
+    }
+
+    .pull-right {
+      order: 3;
+      display: inline-flex;
+      justify-content: flex-end;
+    }
+
+    .posts-map {
+      padding: 0;
+    }
   }
 }
 
