@@ -636,6 +636,12 @@ a.button {
 }
 
 // Discourse Changes
+.d-header-icons .unread-notifications {
+  left: auto;
+  right: -17px;
+  background-color: #4dfaf2;
+}
+
 .categories-and-latest,
 .categories-and-top {
   flex-flow: column wrap;
