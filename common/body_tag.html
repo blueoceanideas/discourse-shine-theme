@@ -1,11 +1,27 @@
-{{plugin-outlet name="below-site-header" args=(hash currentPath=currentPath)}}
+<script type="text/discourse-plugin" type="text/javascript" version="0.8">
+  const container = Discourse.__container__;
+  const { h } = require('virtual-dom');
+
+  api.createWidget('category-header-widget', {
+    html(attrs, state) {
+
+        const path = window.location.pathname;
+        let category;
+
+        const controller = container.lookup('controller:navigation/category');
+        category = controller.get("category");
+
+    }
+  });
+</script>
+
 <script type="text/x-handlebars" data-template-name="/connectors/below-site-header/pinned-category-posts">
     <div id="pinnedCategoryPosts">
-        {{mount-widget widget="post"}}
+        {{mount-widget widget="pinned-category-posts"}}
     </div>
 </script>
 
-<div id="newToConnect">
+<!-- <div id="newToConnect">
 
     <header>
         <h3>New to MSBA Connect?</h3>
@@ -37,4 +53,4 @@
             Learn more about MSBA Connect <a href="">here</a>
         </p>
     </footer>
-</div>
+</div> -->
