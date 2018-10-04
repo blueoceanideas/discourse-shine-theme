@@ -368,7 +368,7 @@ $font-weight: 400, $font-style: normal, $support-required: 'modern') {
 
 //@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-light/proximanova-light-webfont', 300, normal, "oldie" );
 //@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-regular/proximanova-regular-webfont', 400, normal, "oldie" );
-@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-regularit/proximanova-regularit-webfont', 400, italic, "oldie" );
+@include font-face( 'ProximaNova', $proximanova-regular-webfont, 400, italic, "oldie" );
 //@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-medium/proximanova-medium-webfont', 500, normal, "oldie" );
 //@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-semibold/proximanova-semibold-webfont', 600, normal, "oldie" );
 //@include font-face( 'ProximaNova', '../fonts/proximanova/proximanova-bold/proximanova-bold-webfont', 700, normal, "oldie" );
