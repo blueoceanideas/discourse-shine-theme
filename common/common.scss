@@ -800,7 +800,13 @@ a.button {
 }
 
 .topic-list {
+
+  tbody {
+    border: 0;
+  }
+
   .topic-list-item {
+      border: 0;
     td {
       display: flex;
       flex-direction: column;
@@ -822,7 +828,8 @@ a.button {
       padding: 15px;
       display: flex;
       flex-direction: column;
-      background-color: #ffd0387d;
+      background-color: white;
+      box-shadow: 0 0 3px lightgrey;
       border-radius: 11px;
       border-top-left-radius: 0;
       position: relative;
