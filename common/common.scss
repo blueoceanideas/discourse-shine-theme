@@ -501,8 +501,69 @@ a.button {
   }
 }
 
+/*
+*
+*  Category page
+*  (  )
+ */
+.category-boxes {
 
-// post page
+}
+
+.category-boxes-width-topics {
+
+}
+
+
+.category-boxes,
+.category-boxes-width-topics {
+  flex-direction: column;
+
+  //sub-category header
+  h3 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+    // lock icon
+    i {
+      margin-left: auto;
+    }
+  }
+
+  .category-box {
+    text-align: left;
+    border-left: 0 !important;
+    border-bottom: solid 1px lightgray !important;
+    width: 98%;
+    margin: 0 1% 1.5em 1%;
+    padding: 0;
+
+    .category-box-inner {
+
+    }
+
+    .category-box-heading {
+      padding: 0;
+    }
+
+    .featured-topics {
+      padding: 0;
+    }
+
+
+  }
+}
+
+
+
+/*
+*
+*  Post page
+*  (  )
+ */
+
+
 // Category Page title
 // Includes: pin-icon, category page header, edit topic icon
 .title-wrapper {
