@@ -445,7 +445,7 @@ $shadow-color-default: rgba($black, 0.24);
     }
 
     > .button-overhanging {
-      @include transition-ease;
+      transition: all 0.35s ease-in-out;
       align-items: center;
       background-color: $secondary-color;
       border-bottom-left-radius: 7px;
@@ -462,7 +462,7 @@ $shadow-color-default: rgba($black, 0.24);
       text-transform: uppercase;
 
       &:hover {
-        @include transition-ease;
+        transition: all 0.35s ease-in-out;
         background-color: $secondary-shade;
         border: 0;
         padding-bottom: 11px;
