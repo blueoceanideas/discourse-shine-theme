@@ -1032,7 +1032,21 @@ a.button {
 }
 
 #topic-footer-buttons {
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
 
+  .topic-notifications-button {
+    min-width: auto;
+    margin: 10px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin:  0 0 15px;
+    }
+  }
 }
 
 #suggested-topics {
@@ -1254,6 +1268,9 @@ a.button {
 
 // search page
 
+.gap {
+  margin: 0 30px;
+}
 
 .contents .cooked img {
   max-width: 100% !important;
