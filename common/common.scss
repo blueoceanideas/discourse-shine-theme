@@ -546,11 +546,6 @@ a.button {
 }
 
 // Components
-.alert-bootstrap-mode,
-.alert-too-few-topics {
-  display: none;
-}
-
 .laruta-header {
   display: flex;
   flex-direction: column;
@@ -667,7 +662,6 @@ a.button {
     margin: 0;
   }
 }
-
 
 #newToConnect {
   display: flex;
@@ -805,6 +799,10 @@ a.button {
 }
 
 // Alerts & Banners
+.alert-bootstrap-mode,
+.alert-too-few-topics {
+  display: none;
+}
 
 .alert-info.clickable {
   color: white;
@@ -819,8 +817,13 @@ a.button {
   margin-right: auto;
 }
 
-// Topic List
+.footer-message {
+  border-top: solid 1px gray;
+  margin: 30px 15px 15px;
+  padding: 15px 30px 0;
+}
 
+// Topic List
 .topic-list {
 
   tbody {
@@ -902,12 +905,6 @@ a.button {
   }
 }
 
-.footer-message {
-  border-top: solid 1px gray;
-  margin: 30px 15px 15px;
-  padding: 15px 30px 0;
-}
-
 
 /*
 *
@@ -963,7 +960,7 @@ a.button {
     border-radius: 11px;
     box-shadow: 0 0 3px lightgrey;
     padding: 15px;
-    margin: 0 15px;
+    margin: 15px;
 
     .topic-avatar {
 
@@ -988,6 +985,18 @@ a.button {
       .regular {
         margin-top: 30px;
         border-top: solid 1px lightgray;
+      }
+    }
+
+    .topic-map {
+      .map li:nth-child(3) {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      .widget-button {
+        background: none !important;
+        border: none !important;
       }
     }
 
@@ -1020,6 +1029,8 @@ a.button {
 #suggested-topics {
 
 }
+
+
 
 // footer
 .laruta-footer {
