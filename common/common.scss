@@ -805,12 +805,22 @@ a.button {
   }
 }
 
+// Alerts & Banners
+
 .alert-info.clickable {
   color: white;
   background-color: #048C86;
   padding: 15px;
   margin: 0 15px 30px;
 }
+
+.alert-info {
+  width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Topic List
 
 .topic-list {
 
@@ -1009,8 +1019,8 @@ a.button {
 .laruta-footer {
   background-color: #262626;
   color: $gray-light;
-
-  padding: 3rem 0;
+  padding-bottom: 3rem;
+  border-bottom: .8rem solid #3D3D3D;
 
   @media (min-width: 768px) {
     padding: 5rem 0;
@@ -1020,24 +1030,19 @@ a.button {
     padding: 8rem 0;
   }
 
-  .container {
-    padding-bottom: 3rem;
-    border-bottom: .8rem solid #3D3D3D;
+  .logo {
+    margin-bottom: 3rem;
 
-    .logo {
-      margin-bottom: 3rem;
+    img {
+      &.img-fluid {
+        height: auto;
+        max-width: 225px;
 
-      img {
-        &.img-fluid {
-          height: auto;
-          max-width: 225px;
-
-          @media (min-width: 768px) {
-            max-width: 175px;
-          }
-          @media (min-width: 992px){
-            max-width: 100%;
-          }
+        @media (min-width: 768px) {
+          max-width: 175px;
+        }
+        @media (min-width: 992px){
+          max-width: 100%;
         }
       }
     }
@@ -1048,7 +1053,6 @@ a.button {
       margin-bottom: 1rem;
     }
 
-    //
     ul {
       &.unstyled-list {
         list-style-type: none;
@@ -1060,8 +1064,6 @@ a.button {
           //padding: 0.5rem 1rem;
           padding: 0;
           margin: 0 0 .5rem;
-
-          //@include transition-all;
 
           li {
             display: inline-block;
@@ -1083,14 +1085,6 @@ a.button {
             }
           }
         }
-
-        //&.list-inline {
-        //  a.nav-link {
-        //    display: inline-block;
-        //
-        //    li {}
-        //  }
-        //}
 
         &.legal-links {
           margin: 1rem 0;
