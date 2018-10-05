@@ -805,6 +805,13 @@ a.button {
   }
 }
 
+.alert-info.clickable {
+  color: white;
+  background-color: #048C86;
+  padding: 15px;
+  margin: 0 15px 30px;
+}
+
 .topic-list {
 
   tbody {
@@ -879,6 +886,11 @@ a.button {
   }
 }
 
+.footer-message {
+  border-top: solid 1px gray;
+  margin: 30px 15px 15px;
+  padding-top: 15px;
+}
 
 
 /*
