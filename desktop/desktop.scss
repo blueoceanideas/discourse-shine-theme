@@ -671,16 +671,16 @@ body {
   height: inherit;
 }
 
-.container.list-container {
-  display: flex;
-  max-width: 1180px !important;
-  margin: 0 auto;
-
-  .row:last-of-type {
-    flex: 3;
-  }
-
-  .row:first-of-type {
-    flex: 1;
-  }
-}
+//.container.list-container {
+//  display: flex;
+//  max-width: 1180px !important;
+//  margin: 0 auto;
+//
+//  .row:last-of-type {
+//    flex: 3;
+//  }
+//
+//  .row:first-of-type {
+//    flex: 1;
+//  }
+//}
