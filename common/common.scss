@@ -850,7 +850,7 @@ a.button {
     .right {
       margin-left: 25px;
       margin-top: -10px;
-      padding: 15px;
+      padding: 15px 5px 15px 15px;
       display: flex;
       flex-direction: column;
       background-color: white;
@@ -867,12 +867,19 @@ a.button {
     .topic-item-stats {
       order: 1;
 
+      .category {
+        a {
+          max-width: 200px;
+        }
+      }
+
       .badge-category-bg {
         display: none;
       }
 
       .category-name {
         font-style: italic;
+        max-width: 200px !important;
       }
     }
 
