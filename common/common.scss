@@ -829,77 +829,77 @@ a.button {
   tbody {
     border: 0;
   }
+}
 
-  .topic-list-item {
-    border: 0;
-    display: block;
+.topic-list-item {
+  border: 0;
+  display: block;
 
-    td {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-    }
+  td {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-    .avatar {
-      box-shadow: 0 0 7px grey;
-      position: relative;
-      z-index: 2;
-    }
+  .avatar {
+    box-shadow: 0 0 7px grey;
+    position: relative;
+    z-index: 2;
+  }
 
-    .pull-left {
+  .pull-left {
 
-    }
+  }
 
-    .right {
-      margin-left: 25px;
-      margin-top: -10px;
-      padding: 15px 5px 15px 15px;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      box-shadow: 0 0 3px lightgrey;
-      border-radius: 11px;
-      border-top-left-radius: 0;
-      position: relative;
-    }
+  .right {
+    margin-left: 25px;
+    margin-top: -10px;
+    padding: 15px 5px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 11px;
+    border-top-left-radius: 0;
+    position: relative;
+  }
 
-    .main-link {
-      order: 2;
-    }
+  .main-link {
+    order: 2;
+  }
 
-    .topic-item-stats {
-      order: 1;
+  .topic-item-stats {
+    order: 1;
 
-      .category {
-        a {
-          max-width: 200px;
-        }
-      }
-
-      .badge-category-bg {
-        display: none;
-      }
-
-      .category-name {
-        font-style: italic;
-        max-width: 200px !important;
+    .category {
+      a {
+        max-width: 200px;
       }
     }
 
-    .pull-right {
-      order: 3;
-      display: inline-flex;
-      justify-content: flex-end;
+    .badge-category-bg {
+      display: none;
     }
 
-    .posts-map {
-      padding: 0;
-      .number {
-        font-size: 13px;
+    .category-name {
+      font-style: italic;
+      max-width: 200px !important;
+    }
+  }
 
-        &:before {
-          content: "Replies: ";
-        }
+  .pull-right {
+    order: 3;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  .posts-map {
+    padding: 0;
+    .number {
+      font-size: 13px;
+
+      &:before {
+        content: "Replies: ";
       }
     }
   }
