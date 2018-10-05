@@ -1030,19 +1030,24 @@ a.button {
     padding: 8rem 0;
   }
 
-  .logo {
-    margin-bottom: 3rem;
+  .container {
+    padding-bottom: 3rem;
+    border-bottom: .8rem solid #3D3D3D;
 
-    img {
-      &.img-fluid {
-        height: auto;
-        max-width: 225px;
+    .logo {
+      margin-bottom: 3rem;
 
-        @media (min-width: 768px) {
-          max-width: 175px;
-        }
-        @media (min-width: 992px){
-          max-width: 100%;
+      img {
+        &.img-fluid {
+          height: auto;
+          max-width: 225px;
+
+          @media (min-width: 768px) {
+            max-width: 175px;
+          }
+          @media (min-width: 992px){
+            max-width: 100%;
+          }
         }
       }
     }
