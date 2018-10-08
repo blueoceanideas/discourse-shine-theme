@@ -1212,8 +1212,8 @@ a:hover {
 * edit topic icon
  **************************/
 .title-wrapper {
-  width: 94%;
-  padding: 30px 3%;
+  width: 94% !important;
+  padding: 30px 3% !important;
 
   h1 {
     .topic-statuses {
@@ -1364,6 +1364,26 @@ a:hover {
  *******************************/
 #suggested-topics {
 
+  .suggested-topics-title {
+    margin: 0 15px;
+  }
+
+  .topics {
+    margin: 15px;
+    padding: 0;
+    background-color: white;
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 11px;
+    border: solid 1px lightgrey;
+
+    tr{
+      padding: 0 15px;
+
+      &:not(:last-of-type) {
+        border-bottom: solid 1px lightgrey;
+      }
+    }
+  }
 }
 
 /****************************
