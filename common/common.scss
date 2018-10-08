@@ -388,6 +388,28 @@ $border-radius: 4px;
  **/
 $shadow-color-default: rgba($black, 0.24);
 
+// Variables
+$lrt-gray: #4F4F4F;
+
+/****************************
+* HTML Tag Defaults
+ **************************/
+p {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 16px;
+  text-align: center;
+  color: $lrt-gray;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+  color: unset;
+}
+
 /****************************
 * Laruta Super Nav
  **************************/
@@ -507,45 +529,10 @@ $shadow-color-default: rgba($black, 0.24);
   }
 }
 
-// Variables
-$lrt-gray: #4F4F4F;
-
-// Tags
-p {
-  font-style: normal;
-  font-weight: normal;
-  line-height: 28px;
-  font-size: 16px;
-  text-align: center;
-  color: $lrt-gray;
-}
-
-a,
-a:visited,
-a:active,
-a:hover {
-  color: unset;
-}
-
-// Classes
-.button-container {
-  .button {
-    margin: 0 15px;
-  }
-}
-
-.button,
-a.button {
-  border-radius: 4px;
-  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.24);
-  color: white;
-  flex: 1;
-  padding: 15px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-// Components
+/****************************
+* Laruta Header
+* ( currently commented out )
+ **************************/
 .laruta-header {
   display: flex;
   flex-direction: column;
@@ -568,496 +555,88 @@ a.button {
     height: 3px;
     margin: 0 30px;
   }
-}
 
-.user-account-form {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 75px;
-  width: 100%;
-
-  .login {
-    background: #28509F;
+  .button-container {
+    .button {
+      margin: 0 15px;
+    }
   }
 
-  .join {
-    background: #048C86;
-  }
-}
-
-.search-form {
-  color: $lrt-gray;
-  margin: 0 auto 15px;
-  padding-bottom: 150px;
-  width: 100%;
-  display: flex;
-  position: relative;
-
-  input[type="text"] {
-    flex: 1;
-    font-size: 18px;
-    border: solid 1px #c0c0c0;
-    border-radius: 7px;
-    box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
-    margin: 0 15px;
-    padding: 15px;
-  }
-}
-
-#featuredGroups {
-  background-color: rgba(#ffffff, .7);
-  display: flex;
-  flex-direction: column;
-  padding: 45px 15px;
-
-  h2 {
-    color: #28509F;
-    font-size: 34px;
-    text-align: left;
-  }
-
-  a {
-    background-color: darkblue;
+  .button,
+  a.button {
+    border-radius: 4px;
+    box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.24);
     color: white;
-  }
-
-  p {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 15px 0;
-    text-align: left;
-  }
-}
-
-// Discourse Changes
-.d-header-icons .unread-notifications {
-  left: auto;
-  right: -17px;
-  background-color: #4dfaf2;
-}
-
-.categories-and-latest,
-.categories-and-top {
-  flex-flow: column wrap;
-}
-
-.category-list tbody {
-  display: flex !important;
-  padding-top: 6px;
-  flex-wrap: wrap;
-}
-
-.category-list tr {
-  border: none !important;
-  margin: 0;
-  border-radius: 8px;
-  width: 25%;
-}
-
-.category-title-link {
-  display: flex;
-  flex-flow: column wrap;
-
-  .category-text-title {
-    margin: 0;
-  }
-}
-
-#newToConnect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  > div {
-    box-shadow: 0 0 7px rgba(darkblue, .5);
-    display: flex;
     flex: 1;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .user-account-form {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 75px;
+    width: 100%;
+
+    .login {
+      background: #28509F;
+    }
+
+    .join {
+      background: #048C86;
+    }
+  }
+
+  .search-form {
+    color: $lrt-gray;
+    margin: 0 auto 15px;
+    padding-bottom: 150px;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    input[type="text"] {
+      flex: 1;
+      font-size: 18px;
+      border: solid 1px #c0c0c0;
+      border-radius: 7px;
+      box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+      margin: 0 15px;
+      padding: 15px;
+    }
+  }
+
+  #featuredGroups {
+    background-color: rgba(#ffffff, .7);
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    color: darkblue;
-    padding: 30px;
-  }
-}
+    padding: 45px 15px;
 
-/*
-*
-*  Category page
-*  (  )
- */
-.category-title-header {
-  background-color: #3E3E3D !important;
-}
+    h2 {
+      color: #28509F;
+      font-size: 34px;
+      text-align: left;
+    }
 
-.category-title-contents {
-  color: white;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-
-  h1 {
-    display: inline;
-    font-size: 28px;
-    line-height: 32px;
-  }
-
-  > div {
-    margin: 15px 0;
-  }
-
-  .category-title-description {
-    p {
+    a {
+      background-color: darkblue;
       color: white;
     }
-  }
-}
-
-#navigation-bar,
-.category-heading,
-.category-breadcrumb,
-.category-notifications-button {
-  display: none !important;
-}
-
-.edit-category {
-  display: inline-block;
-  width: 45%;
-  margin: 0 3px;
-  width: 98%;
-  display: inline-block;
-  padding: 15px 0;
-  text-align: center;
-}
-
-#create-topic {
-  background-color: #28509F !important;
-  color: white !important;
-  border-radius: 0 !important;
-  border: solid 1px #545efc;
-  text-align: center;
-  box-sizing: border-box;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  justify-content: center;
-  margin: 0 3px 10px 3px;
-  order: 10;
-  padding: 15px 0;
-  width: 98%;
-
-  &:disabled {
-    display: none;
-  }
-}
-
-.category-boxes {
-  width: 94%;
-  margin: 0 3% 1.5em 3%;
-  padding: 30px 0;
-}
-
-.category-boxes-with-topics {
-
-}
-
-.category-boxes,
-.category-boxes-with-topics {
-  flex-direction: column;
-
-  //sub-category header
-  h3 {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-
-    // lock icon
-    i {
-      margin-left: auto;
-    }
-  }
-
-  .category-box {
-    text-align: left;
-    border-left: 0 !important;
-    border-bottom: solid 1px lightgray !important;
-    width: 94% !important;
-    margin: 0 3% 1.5em 3%;
-    padding: 15px 0 30px;
-
-    .category-box-inner {
-      border: 0 !important;
-    }
-
-    .category-box-heading {
-      padding: 0;
-    }
-
-    .featured-topics {
-      padding: 0;
-    }
-  }
-}
-
-// Alerts & Banners
-.alert-bootstrap-mode,
-.alert-too-few-topics {
-  display: none;
-}
-
-.alert-info.clickable {
-  color: white;
-  background-color: #048C86;
-  padding: 15px;
-  margin: 0 15px 30px;
-}
-
-.alert-info {
-  width: 90% !important;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer-message {
-  border-top: solid 1px gray;
-  margin: 30px 15px 15px;
-  padding: 15px 30px 0;
-}
-
-// Topic List
-.topic-list {
-
-  tbody {
-    border: 0;
-  }
-
-  .topic-list-item {
-    border: 0;
-    display: block;
-
-    td {
-      display: flex;
-      flex-direction: column;
-      margin: 0 auto;
-    }
-
-    .avatar {
-      box-shadow: 0 0 7px grey;
-      position: relative;
-      z-index: 2;
-    }
-
-    .pull-left {
-
-    }
-
-    .right {
-      margin-left: 25px;
-      margin-top: -10px;
-      padding: 15px 5px 15px 15px;
-      display: flex;
-      flex-direction: column;
-      background-color: white;
-      box-shadow: 0 0 3px lightgrey;
-      border-radius: 11px;
-      border-top-left-radius: 0;
-      position: relative;
-    }
-
-    .main-link {
-      order: 2;
-    }
-
-    .topic-item-stats {
-      order: 1;
-
-      .category {
-        a {
-          max-width: 200px;
-        }
-      }
-
-      .badge-category-bg {
-        display: none;
-      }
-
-      .category-name {
-        font-style: italic;
-        max-width: 200px !important;
-      }
-    }
-
-    .pull-right {
-      order: 3;
-      display: inline-flex;
-      justify-content: flex-end;
-    }
-
-    .posts-map {
-      padding: 0;
-      .number {
-        font-size: 13px;
-
-        &:before {
-          content: "Replies: ";
-        }
-      }
-    }
-  }
-}
-
-
-/*
-*
-*  Post page
-*  (  )
- */
-
-
-// Category Page title
-// Includes: pin-icon, category page header, edit topic icon
-.title-wrapper {
-  width: 94%;
-  padding: 30px 3%;
-
-  h1 {
-    .topic-statuses {
-      display: flex;
-      margin-bottom: 15px;
-    }
-
-    .fancy-title {
-      text-align: left;
-      width: 100%;
-      font-size: 28px;
-      margin: 15px 0;
-    }
-
-    .edit-topic {
-
-    }
-  }
-
-  .topic-category {
-
-    .badge-wrapper {
-      margin-top: 0;
-      font-style: italic;
-      font-size: 14px;
-    }
-
-    .badge-category-bg {
-      display: none;
-    }
-  }
-}
-
-// all posts live inside a post-stream
-.post-stream {
-
-
-}
-
-.topic-post {
-
-  background-color: white;
-  border-radius: 11px;
-  box-shadow: 0 0 3px lightgrey;
-  padding: 15px;
-  margin: 15px;
-
-  .topic-avatar {
-
-  }
-
-  .topic-meta-data {
-    flex-direction: column;
-
-    .names {
-      margin-right: unset;
-      flex: unset;
-    }
-
-    .post-date:before {
-      //color: gray;
-      //content: 'posted ';
-    }
-  }
-
-  .topic-body {
-
-    .regular {
-      margin-top: 30px;
-      border-top: solid 1px lightgray;
-    }
-  }
-
-  .topic-map {
-    .map {
-      li {
-        padding: 7px 6px;
-
-        &:nth-child(3),
-        &:nth-child(4),
-        &:nth-child(5) {
-          display: flex;
-          flex-direction: column-reverse;
-        }
-      }
-    }
-
-    .widget-button {
-      padding: 0 5px;
-      background: none !important;
-      border: none !important;
-    }
-  }
-
-  .contents {
-
 
     p {
+      font-size: 18px;
+      line-height: 30px;
+      margin: 15px 0;
       text-align: left;
     }
   }
-
-  .post-menu-area {
-
-  }
-
-  article {
-    border: 0;
-  }
 }
 
-.loading-container {
-
-}
-
-#topic-footer-buttons {
-  padding: 20px 0 0 0;
-  margin: 0 auto;
-  text-align: center;
-  width: 75%;
-
-  .topic-notifications-button {
-    min-width: auto;
-    margin: 10px 0 15px 0;
-    display: flex;
-    flex-direction: column;
-
-    .btn {
-      margin:  0 0 15px;
-    }
-  }
-}
-
-#suggested-topics {
-
-}
-
-
-
-// footer
+/****************************
+* Laruta Footer
+* ( taken from MSBA footer )
+ **************************/
 .laruta-footer {
   background-color: #262626;
   color: $gray-light;
@@ -1261,17 +840,545 @@ a.button {
   //@media (max-width: 992px){}
 }
 
+/****************************
+* New to Connect section
+* ( currently commented out )
+ **************************/
+#newToConnect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > div {
+    box-shadow: 0 0 7px rgba(darkblue, .5);
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    color: darkblue;
+    padding: 30px;
+  }
+}
+
+/****************************
+* Mobile Nav Menu Panels
+ **************************/
 .menu-panel {
   height: 100% !important;
   transition: all 0.35s ease-in-out;
 }
 
-// search page
+/****************************
+* Mobile Navigation icons
+ **************************/
+.d-header-icons {
+
+  .header-dropdown-toggle {
+
+  }
+
+  #search-button {
+
+  }
+
+  #toggle-hamburger-menu {
+
+  }
+
+  #current-user {
+    .icon {
+      div {
+        img {
+
+        }
+      }
+    }
+  }
+
+  .unread-notifications {
+    left: auto;
+    right: -17px;
+    background-color: #4dfaf2;
+  }
+}
+
+/****************************
+* Alerts, Banners, & Messages
+*
+*
+*
+*
+ **************************/
+.alert-bootstrap-mode,
+.alert-too-few-topics {
+  display: none;
+}
+
+.alert-info {
+  width: 90% !important;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.clickable {
+    color: white;
+    background-color: #048C86;
+    padding: 15px;
+    margin: 0 15px 30px;
+  }
+}
+
+.footer-message {
+  border-top: solid 1px gray;
+  margin: 30px 15px 15px;
+  padding: 15px 30px 0;
+}
+
+/****************************
+* Buttons
+*
+*
+*
+*
+ **************************/
+.edit-category {
+  // @TODO: this may need to move to .btn or .btn-default
+  margin: 0 3px;
+  width: 98%;
+  display: inline-block;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/****************************
+* Create Topic Button
+* (also the Open Draft Button)
+ *****************************/
+#create-topic {
+  align-self: stretch;
+  align-items: center;
+  background-color: #28509F !important;
+  border-radius: 0 !important;
+  border: solid 1px #545efc;
+  box-sizing: border-box;
+  color: white !important;
+  display: flex;
+  justify-content: center;
+  margin: 0 3px 10px 3px;
+  order: 10;
+  padding: 15px 0;
+  text-align: center;
+  width: 98%;
+
+  &:disabled {
+    display: none;
+  }
+
+  i {
+
+  }
+
+  span {
+
+  }
+}
+
+/****************************
+* Components
+*
+*
+*
+*
+ **************************/
+
+/****************************
+* Category List (Group Page)
+ **************************/
+.category-list {
+
+  .category-title-link {
+    display: flex;
+    flex-flow: column wrap;
+
+    .category-text-title {
+      margin: 0;
+    }
+  }
+
+  tbody {
+    display: flex !important;
+    padding-top: 6px;
+    flex-wrap: wrap;
+  }
+
+  tr {
+    border: none !important;
+    margin: 0;
+    border-radius: 8px;
+    width: 25%;
+  }
+}
+
+/****************************
+* Category Title Header (Category Page)
+* Displays icon, header text, and more
+ ****************************************/
+.category-title-header {
+  background-color: #3E3E3D !important;
+
+  .category-title-contents {
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    h1 {
+      display: inline;
+      font-size: 28px;
+      line-height: 32px;
+    }
+
+    > div {
+      margin: 15px 0;
+    }
+
+    .category-title-description {
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+/****************************
+* Category Navigation (Category Page)
+ ***************************************/
+#navigation-bar,
+.category-heading,
+.category-breadcrumb,
+.category-notifications-button {
+  display: none !important;
+}
+
+.categories-and-latest,
+.categories-and-top {
+  flex-flow: column wrap;
+}
+
+/****************************
+* Topic List (Category Page)
+ **************************/
+.topic-list {
+
+  tbody {
+    border: 0;
+  }
+}
+
+/****************************
+* Topic List Item (Category Page)
+ **************************/
+.topic-list-item {
+  border: 0;
+  display: block;
+
+  td {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .avatar {
+    box-shadow: 0 0 7px grey;
+    position: relative;
+    z-index: 2;
+  }
+
+  .pull-left {
+
+  }
+
+  .right {
+    margin-left: 25px;
+    margin-top: -10px;
+    padding: 15px 5px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 0 3px lightgrey;
+    border-radius: 11px;
+    border-top-left-radius: 0;
+    position: relative;
+  }
+
+  .main-link {
+    order: 2;
+  }
+
+  .topic-item-stats {
+    order: 1;
+
+    .category {
+      a {
+        max-width: 200px;
+      }
+    }
+
+    .badge-category-bg {
+      display: none;
+    }
+
+    .category-name {
+      font-style: italic;
+      max-width: 200px !important;
+    }
+  }
+
+  .pull-right {
+    order: 3;
+    display: inline-flex;
+    justify-content: flex-end;
+  }
+
+  .posts-map {
+    padding: 0;
+    .number {
+      font-size: 13px;
+
+      &:before {
+        content: "Replies: ";
+      }
+    }
+  }
+}
+
+
+/****************************
+* Category Boxes & Category Box (Category Page)
+ ************************************************/
+.category-boxes,
+.category-boxes-with-topics {
+  flex-direction: column;
+
+  //sub-category header
+  h3 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+
+    // lock icon
+    i {
+      margin-left: auto;
+    }
+  }
+
+  .category-box {
+    text-align: left;
+    border-left: 0 !important;
+    border-bottom: solid 1px lightgray !important;
+    width: 94% !important;
+    margin: 0 3% 1.5em 3%;
+    padding: 15px 0 30px;
+
+    .category-box-inner {
+      border: 0 !important;
+    }
+
+    .category-box-heading {
+      padding: 0;
+    }
+
+    .featured-topics {
+      padding: 0;
+    }
+  }
+}
+
+.category-boxes {
+  width: 94%;
+  margin: 0 3% 1.5em 3%;
+  padding: 30px 0;
+}
+
+.category-boxes-with-topics {
+
+}
+
+/****************************
+* Topic title (Topic Page)
+* Includes:
+* pin-icon,
+* category page header,
+* edit topic icon
+ **************************/
+.title-wrapper {
+  width: 94%;
+  padding: 30px 3%;
+
+  h1 {
+    .topic-statuses {
+      display: flex;
+      margin-bottom: 15px;
+    }
+
+    .fancy-title {
+      text-align: left;
+      width: 100%;
+      font-size: 28px;
+      margin: 15px 0;
+    }
+
+    .edit-topic {
+
+    }
+  }
+
+  .topic-category {
+
+    .badge-wrapper {
+      margin-top: 0;
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .badge-category-bg {
+      display: none;
+    }
+  }
+}
+
+/****************************
+* Post-Stream (Topic Page)
+ **************************/
+.post-stream {
+
+
+}
+
+
+/****************************
+* Topic Post Component (Topic Page)
+ **************************/
+.topic-post {
+
+  background-color: white;
+  border-radius: 11px;
+  box-shadow: 0 0 3px lightgrey;
+  padding: 15px;
+  margin: 15px;
+
+  .topic-avatar {
+
+  }
+
+  .topic-meta-data {
+    flex-direction: column;
+
+    .names {
+      margin-right: unset;
+      flex: unset;
+    }
+
+    .post-date:before {
+      //color: gray;
+      //content: 'posted ';
+    }
+  }
+
+  .topic-body {
+
+    .regular {
+      margin-top: 30px;
+      border-top: solid 1px lightgray;
+    }
+  }
+
+  .topic-map {
+    .map {
+      li {
+        padding: 7px 6px;
+
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+    }
+
+    .widget-button {
+      padding: 0 5px;
+      background: none !important;
+      border: none !important;
+    }
+  }
+
+  .contents {
+
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .post-menu-area {
+
+  }
+
+  article {
+    border: 0;
+  }
+}
+
+/****************************
+* Loading Container (Topic Page)
+ **************************/
+.loading-container {
+
+}
+
+/****************************
+* Topic Page Footer Buttons  (Topic Page)
+ *******************************************/
+#topic-footer-buttons {
+  padding: 20px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+
+  .topic-notifications-button {
+    min-width: auto;
+    margin: 10px 0 15px 0;
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+      margin:  0 0 15px;
+    }
+  }
+}
+
+/****************************
+* Suggested Topics (Topic Page)
+ *******************************/
+#suggested-topics {
+
+}
+
+/****************************
+* Search Page
+ **************************/
 .gap {
   margin: 0 30px;
 }
 
+/****************************
+* Images inside of
+* Post Content
+ **************************/
 .contents .cooked img {
+  // prevent overflow
   max-width: 100% !important;
   height: auto !important;
 }
