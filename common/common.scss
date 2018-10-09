@@ -1596,7 +1596,6 @@ body {
 .featured-topics ul li {
   color: #4f4f4f !important;
   margin: 0;
-  margin-left: 0 !important;
   padding: 8px 0 !important;
   line-height: 16px;
 
@@ -1607,5 +1606,14 @@ body {
 
 .category-boxes .category-box,
 .category-boxes-with-topics .category-box {
-  border-bottom: solid 3px lightgray !important;
+  border-bottom: solid 3px #FFDA21 !important;
+
+  &:first-of-type {
+    border-top: solid 3px #FFDA21 !important;
+  }
+}
+
+#create-topic {
+  border: 0;
+  background-color: #FFDA21 !important;
 }
