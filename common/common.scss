@@ -534,7 +534,11 @@ a:hover {
 * ( currently commented out )
  **************************/
 .laruta-header {
-  display: flex;
+  display: none !important;
+}
+
+.navigation-categories  .laruta-header {
+  display: flex !important;
   flex-direction: column;
   width: 100%;
 
@@ -845,6 +849,10 @@ a:hover {
 * ( currently commented out )
  **************************/
 #newToConnect {
+  display: none !important;
+}
+
+.navigation-categories  #newToConnect { {
   display: flex;
   flex-direction: column;
   align-items: center;
