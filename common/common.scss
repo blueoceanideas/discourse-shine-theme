@@ -1048,7 +1048,6 @@ a:hover {
       }
     }
   }
-
   .category-title-link {
     display: flex;
     flex-direction: column-reverse !important;
@@ -1074,10 +1073,34 @@ a:hover {
     display: none;
   }
 
-  .category-logo {
-    max-width: unset;
-    max-height: 100%;
+  /****************************
+* Category Header Section (Group Page)
+*************************************/
+  .category-title-header {
+    background-color: unset !important;
+    color: $gray-dark;
+
+    .category-title-contents {
+
+      &,
+      .category-title-image,
+      .category-title-content {
+        max-width: 100%;
+      }
+
+      .category-title-image {
+        .category-logo {
+          max-width: unset;
+          max-height: 100% !important;
+        }
+      }
+
+      .category-title-content {
+
+      }
+    }
   }
+
 
   .category-name {
     color: #28509F;
