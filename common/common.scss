@@ -1595,8 +1595,8 @@ body {
 
 .featured-topics ul li {
   color: #4f4f4f !important;
-  margin: 7px 0;
-  margin-left: 0px;
+  margin: 0;
+  margin-left: 0 !important;
   padding: 8px 0 !important;
   line-height: 16px;
 
