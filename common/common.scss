@@ -1598,10 +1598,14 @@ body {
   margin: 7px 0;
   margin-left: 0px;
   padding: 8px 0 !important;
-  border-bottom: solid 1px #ddd;
   line-height: 16px;
 
   &:not(:last-of-type) {
     border-bottom: solid 1px #ddd;
   }
+}
+
+.category-boxes .category-box,
+.category-boxes-with-topics .category-box {
+  border-bottom: solid 3px lightgray !important;
 }
