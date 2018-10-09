@@ -1457,3 +1457,17 @@ a:hover {
   max-width: 100% !important;
   height: auto !important;
 }
+
+/****************************
+* Modal "Bootbox"
+ ***************************/
+.bootbox.modal {
+
+  top: 10%;
+  width: 90%;
+  margin: 5%;
+}
+
+.badge-category-bg {
+  display: none !important;
+}
