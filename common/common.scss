@@ -995,14 +995,48 @@ a:hover {
 * Category List (Group Page)
  **************************/
 .category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .category-list-item {
+    width: 44%;
+    margin: 3% !important;
+    border: 0;
+    flex: 1 0 auto;
+
+    table.topic-list {
+      &, tr, th, td, h3, a {
+        height: 100%;
+      }
+    }
+  }
 
   .category-title-link {
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
     flex-flow: column wrap;
+    height: 100%;
 
     .category-text-title {
       margin: 0;
     }
+  }
+
+  .category-topic-link {
+    display: none;
+  }
+
+  .category-logo {
+    max-width: unset;
+    max-height: 100%;
+  }
+
+  .main-link h3 {
+    text-align: center;
   }
 
   tbody {
@@ -1016,6 +1050,10 @@ a:hover {
     margin: 0;
     border-radius: 8px;
     width: 25%;
+  }
+
+  footer {
+    display: none;
   }
 }
 
@@ -1074,6 +1112,11 @@ a:hover {
     border: 0;
   }
 }
+
+//.topic-list,
+//.topic-list-bottom {
+//  display: none;
+//}
 
 /****************************
 * Topic List Item (Category Page)
@@ -1384,6 +1427,10 @@ a:hover {
       }
     }
   }
+}
+
+.suggested-topics-message {
+  margin: 0 15px !important;
 }
 
 /****************************
