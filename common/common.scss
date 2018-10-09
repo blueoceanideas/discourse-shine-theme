@@ -1031,7 +1031,7 @@ a:hover {
   flex-wrap: wrap;
 
   .category-list-item {
-    width: 44%;
+    width: 94%;
     margin: 3% !important;
     border: 0;
     flex: 1 0 auto;
@@ -1045,7 +1045,7 @@ a:hover {
 
   .category-title-link {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
     align-items: center;
     justify-content: center;
     flex-flow: column wrap;
@@ -1073,8 +1073,15 @@ a:hover {
     max-height: 100%;
   }
 
+  .category-name {
+    color: #28509F;
+    font-size: 16px;
+    text-align: center;
+  }
+
   .main-link h3 {
     text-align: center;
+    width: 100%;
   }
 
   tbody {
