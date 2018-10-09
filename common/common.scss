@@ -1587,3 +1587,21 @@ body {
 .fa.fa-lock.d-icon.d-icon-lock {
   display: none;
 }
+
+
+/****************************
+* @TODO: Put these in the right place!
+****************************************/
+
+.featured-topics ul li {
+  color: #4f4f4f !important;
+  margin: 7px 0;
+  margin-left: 0px;
+  padding: 8px 0 !important;
+  border-bottom: solid 1px #ddd;
+  line-height: 16px;
+
+  &:not(:last-of-type) {
+    border-bottom: solid 1px #ddd;
+  }
+}
