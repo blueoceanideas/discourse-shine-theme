@@ -1023,6 +1023,14 @@ a:hover {
 
     .category-text-title {
       margin: 0;
+
+      .category-text-title {
+        margin-bottom: auto;
+
+        & ~ div {
+          margin-top: auto
+        }
+      }
     }
   }
 
