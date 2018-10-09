@@ -534,7 +534,7 @@ a:hover {
 * ( currently commented out )
  **************************/
 .laruta-header {
-  display: none !important;
+  display: none;
 }
 
 .navigation-categories  .laruta-header {
@@ -616,12 +616,12 @@ a:hover {
 * (part of laruta header)
  **************************/
   #featuredGroups {
-    display: none !important;
+    display: none;
   }
 
-  .navigation-categories  #featuredGroups { {
+  .navigation-categories  #featuredGroups {
     background-color: rgba(#ffffff, .7);
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     padding: 45px 15px;
 
@@ -857,11 +857,11 @@ a:hover {
 * ( currently commented out )
  **************************/
 #newToConnect {
-  display: none !important;
+  display: none;
 }
 
-.navigation-categories  #newToConnect {
-  display: flex;
+.navigation-categories #newToConnect {
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   background-color: #E0F4FC;
