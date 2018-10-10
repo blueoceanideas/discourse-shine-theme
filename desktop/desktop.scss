@@ -626,6 +626,7 @@ td.category > div > h3 > a {
 body {
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 13px;
+  height: 100vh;
 }
 
 .laruta-header {
