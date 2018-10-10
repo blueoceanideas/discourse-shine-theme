@@ -1617,6 +1617,12 @@ body {
   border: 0;
   background-color: #FFDA21 !important;
   color: black !important;
+
+    &:hover {
+      i {
+        color: #fff;
+      }
+    }
 }
 
 .category-box-about-this-section-category {
@@ -1625,6 +1631,14 @@ body {
 
 .category-title-header {
   background-color: unset !important;
+
+  .category-title-contents {
+    .category-title-description {
+      p {
+        color: $gray-darker !important;
+      }
+    }
+  }
 }
 
 .category-title-image, .category-logo {
