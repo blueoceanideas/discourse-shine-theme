@@ -1151,7 +1151,7 @@ a:hover {
     }
 
     > div {
-      margin: 15px 0;
+      margin: 0;
     }
 
     .category-title-description {
@@ -1589,10 +1589,14 @@ body {
 }
 
 
+
+
+
+
+
 /****************************
 * @TODO: Put these in the right place!
 ****************************************/
-
 .featured-topics ul li {
   color: #4f4f4f !important;
   margin: 0;
@@ -1620,7 +1624,7 @@ body {
 
     &:hover {
       i {
-        color: #fff;
+        color: #fff !important;
       }
     }
 }
@@ -1636,6 +1640,8 @@ body {
     .category-title-description {
       p {
         color: $gray-darker !important;
+        line-height: 19px;
+        margin: 0;
       }
     }
   }
@@ -1644,4 +1650,8 @@ body {
 .category-title-image, .category-logo {
   max-height: 100%;
   max-width: 100%;
+}
+
+#main-outlet {
+  padding-top: 0 !important;
 }
