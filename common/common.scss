@@ -1187,9 +1187,12 @@ a:hover {
   }
 }
 
-.topic-list, .topic-list-bottom {
-  display: none;
+.categories-list {
+  .topic-list, .topic-list-bottom {
+    display: none;
+  }
 }
+
 /****************************
 * Topic List Item (Category Page)
  **************************/
