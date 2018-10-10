@@ -1187,9 +1187,17 @@ a:hover {
   }
 }
 
+// Hide the categories list on the category page...
 body.categories-list {
-  .topic-list, .topic-list-bottom {
+  table.topic-list, .topic-list-bottom {
     display: none;
+  }
+}
+
+// ...but not of the front page... there has to be a better way to do this
+body.navigation-categories {
+  table.topic-list, .topic-list-bottom {
+    display: block !important;
   }
 }
 
