@@ -1212,9 +1212,16 @@ body.navigation-categories {
   display: block;
 
   td {
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
+
+    @media (max-width: 768px ){
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (min-width: 768px ){
+      display: block;
+    }
   }
 
   .avatar {
