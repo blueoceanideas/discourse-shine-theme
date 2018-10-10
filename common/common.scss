@@ -1165,7 +1165,10 @@ a:hover {
 /****************************
 * Category Navigation (Category Page)
  ***************************************/
-#navigation-bar,
+#navigation-bar {
+
+}
+
 .category-heading,
 .category-breadcrumb,
 .category-notifications-button {
@@ -1190,7 +1193,7 @@ a:hover {
 // Hide the categories list on the category page...
 body.categories-list {
   table.topic-list, .topic-list-bottom {
-    display: none;
+    //display: none;
   }
 }
 
