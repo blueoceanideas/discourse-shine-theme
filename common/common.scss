@@ -1622,3 +1622,12 @@ body {
 .category-box-about-this-section-category {
   display: none;
 }
+
+.category-title-header {
+  background-color: unset !important;
+}
+
+.category-title-image, .category-logo {
+  max-height: 100%;
+  max-width: 100%;
+}
