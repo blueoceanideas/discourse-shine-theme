@@ -1082,6 +1082,8 @@ a:hover {
 
     .category-title-contents {
 
+      padding: 0 15px;
+
       &,
       .category-title-image,
       .category-title-content {
@@ -1487,14 +1489,15 @@ body.navigation-categories {
 * Topic Page Footer Buttons  (Topic Page)
  *******************************************/
 #topic-footer-buttons {
-  padding: 20px 0 0 0;
+  border-top: solid 1px $gray-light;
+  padding: 0;
   margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 100%;
 
   .topic-notifications-button {
     min-width: auto;
-    margin: 10px 0 15px 0;
+    margin: 15px 0;
     display: flex;
     flex-direction: column;
 
@@ -1746,13 +1749,15 @@ body {
 .topic-footer-main-buttons {
   display: flex;
   flex-direction: column-reverse;
+  padding-top: 30px;
+  margin: 0 15px;
 }
 
 .topic-footer-mobile-dropdown {
-  border-top: solid 1px lightgrey;
+  //border-top: solid 1px lightgrey;
 }
 
-.topic-footer-mobile-dropdown, .topic-footer-mobile-dropdown > * {
+.topic-footer-mobile-dropdown {
   margin-top: 15px;
   width: 100% !important;
 }
