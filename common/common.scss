@@ -1694,12 +1694,20 @@ body {
 
 
 .topic-category > a {
+  // border-bottom: solid 1px #6a7299;
   display: inline;
-  border-bottom: solid 1px #6a7299;
+
+  > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 
 .topic-category > a:first-of-type {
   font-style: normal !important;
+  max-width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   //border: solid 1px #6a7299d;
   //border-radius: 7px;
   //padding: 3px;
@@ -1710,12 +1718,10 @@ body {
   //font-style: italic !important;
 }
 
-
 .topic-category > a:last-of-type:before {
 
-  content: "»";
+  content: "/";
   border-bottom: 0 !important;
-
   //width: 15px;
   //height: 10px;
   //background-color: gold;
@@ -1771,6 +1777,7 @@ button.create {
 
 .topic-status-info {
   border-top: 0;
+  padding-top: 0;
 }
 
 .topic-post {
@@ -1797,6 +1804,6 @@ ol.category-breadcrumb {
   flex-direction: row;
 
   a.badge-wrapper {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
