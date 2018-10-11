@@ -1826,3 +1826,16 @@ ol.category-breadcrumb {
   background: #F6C92A;
   color: black;
 }
+
+ol.category-breadcrumb {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    width: 80%;
+}
+
+.category-drop:nth-of-type(1), .category-drop:nth-of-type(2) {
+    width: 48% !important;
+}
