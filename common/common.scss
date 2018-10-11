@@ -1360,7 +1360,7 @@ body.navigation-categories {
  **************************/
 .title-wrapper {
   width: 94% !important;
-  padding: 30px 3% !important;
+  padding: 0 3% 30px !important;
 
   h1 {
     .topic-statuses {
@@ -1810,4 +1810,13 @@ ol.category-breadcrumb {
   a.badge-wrapper {
     font-size: 12px;
   }
+}
+
+.select-kit .select-kit-row .name {
+  text-align: left;
+}
+
+.btn-primary {
+  background: #F6C92A;
+  color: black;
 }
