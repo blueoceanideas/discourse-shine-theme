@@ -1677,3 +1677,86 @@ body {
 .d-header #site-logo {
   max-width: unset !important;
 }
+
+/****************************
+* Tweaks to Topic Page
+*************************************/
+
+
+.topic-category > a {
+  display: inline;
+  border-bottom: solid 1px #6a7299;
+}
+
+.topic-category > a:first-of-type {
+  font-style: normal !important;
+  //border: solid 1px #6a7299d;
+  //border-radius: 7px;
+  //padding: 3px;
+}
+
+.topic-category > a:last-of-type {
+  text-indent: 5px;
+  //font-style: italic !important;
+}
+
+
+.topic-category > a:last-of-type:before {
+
+  content: "»";
+  border-bottom: 0 !important;
+
+  //width: 15px;
+  //height: 10px;
+  //background-color: gold;
+  //border-left: solid 1px #6a7299;
+  //border-bottom: solid 1px #6a7299;
+  //display: block;
+  //content: "";
+  //text-indent: 30px;
+  //position: relative;
+  //top: -5px;
+  //left: 5px;
+}
+
+
+.title-wrapper h1 .fancy-title {
+  text-align: left;
+  font-size: 24px;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: solid 1px;
+  margin-bottom: 0;
+}
+
+.d-icon-pencil {
+  display: none;
+}
+
+#topic-title {
+  padding-bottom: 0;
+}
+
+.topic-footer-main-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.topic-footer-mobile-dropdown {
+  border-top: solid 1px lightgrey;
+}
+
+.topic-footer-mobile-dropdown, .topic-footer-mobile-dropdown > * {
+  margin-top: 15px;
+  width: 100% !important;
+}
+
+button.create {
+  border-radius: 0 !important;
+  padding: 15px;
+  width: 100%;
+}
+
+.topic-status-info {
+  border-top: 0;
+}
