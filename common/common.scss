@@ -1770,3 +1770,8 @@ button.create {
 .topic-post {
   padding-bottom: 0 !important;
 }
+
+ol.category-breadcrumb li {
+  border-radius: 20px !important;
+  overflow: hidden !important;
+}
