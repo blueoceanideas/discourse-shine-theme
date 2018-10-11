@@ -1771,7 +1771,21 @@ button.create {
   padding-bottom: 0 !important;
 }
 
-ol.category-breadcrumb li {
-  border-radius: 0 !important;
-  overflow: visible !important;
+ol.category-breadcrumb {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+
+  li {
+    border-radius: 0 !important;
+    overflow: visible !important;
+  }
+}
+
+
+.nav-pills>li>a {
+  /* padding: 10px; */
+  /* margin-left: -10px; */
+  /* border-radius: 2em; */
+  border-width: 0;
+  /* overflow: hidden; */
 }
