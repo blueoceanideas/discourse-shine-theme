@@ -1861,3 +1861,11 @@ button.dropdown-select-box-header {
 .badge-notification.new-posts, .badge-notification.unread-posts {
   background-color: #acc2d7;
 }
+
+.tag-drop-header {
+  display: none !important;
+}
+
+.select-kit-row[data-name=Invite] {
+  display: none !important;
+}
