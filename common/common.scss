@@ -1082,8 +1082,6 @@ a:hover {
 
     .category-title-contents {
 
-      padding: 0 15px;
-
       &,
       .category-title-image,
       .category-title-content {
@@ -1386,6 +1384,10 @@ body.navigation-categories {
       margin-top: 0;
       font-style: italic;
       font-size: 14px;
+
+      .badge-category {
+
+      }
     }
 
     .badge-category-bg {
@@ -1712,6 +1714,10 @@ body {
   //border: solid 1px #6a7299d;
   //border-radius: 7px;
   //padding: 3px;
+
+  .category-name {
+    font-weight: 600 !important;
+  }
 }
 
 .topic-category > a:last-of-type {
