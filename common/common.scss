@@ -1839,3 +1839,22 @@ ol.category-breadcrumb {
 .category-drop:nth-of-type(1), .category-drop:nth-of-type(2) {
     width: 48% !important;
 }
+
+.list-controls .nav-pills {
+  display: flex;
+  flex: unset !important;
+  margin: 0 3px 5px 3px;
+  position: relative;
+}
+
+.list-controls .select-kit {
+  display: flex;
+  align-self: stretch;
+  /* margin-bottom: 10px; */
+}
+
+button.dropdown-select-box-header {
+  padding: 10px !important;
+  height: 36px !important;
+  margin-bottom: 5px !important;
+}
