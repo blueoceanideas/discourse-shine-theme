@@ -1169,16 +1169,17 @@ a:hover {
 
 }
 
-.category-heading,
-.category-breadcrumb,
-.category-notifications-button {
+
+.category-heading {
   display: none !important;
 }
 
+/*
 .categories-and-latest,
 .categories-and-top {
   flex-flow: column wrap;
 }
+*/
 
 /****************************
 * Topic List (Category Page)
@@ -1207,6 +1208,7 @@ body.navigation-categories {
 /****************************
 * Topic List Item (Category Page)
  **************************/
+/*
 .topic-list-item {
   border: 0;
 
@@ -1290,7 +1292,7 @@ body.navigation-categories {
     }
   }
 }
-
+*/
 
 /****************************
 * Category Boxes & Category Box (Category Page)
