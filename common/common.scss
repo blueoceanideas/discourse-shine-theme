@@ -1489,8 +1489,8 @@ body.navigation-categories {
 * Topic Page Footer Buttons  (Topic Page)
  *******************************************/
 #topic-footer-buttons {
-  border-top: solid 1px $gray-lighter;
-  border-bottom: solid 1px $gray-lighter;
+  border-top: solid 1px rgba($gray-light, .6);
+  border-bottom: solid 1px rgba($gray-light, .6);
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -1521,15 +1521,15 @@ body.navigation-categories {
     margin: 15px;
     padding: 0;
     background-color: white;
-    box-shadow: 0 0 3px lightgrey;
+    box-shadow: 0 0 3px  rgba($gray-light, .6);
     border-radius: 11px;
-    border: solid 1px lightgrey;
+    border: solid 1px  rgba($gray-light, .6);
 
     tr{
       padding: 0 15px;
 
       &:not(:last-of-type) {
-        border-bottom: solid 1px lightgrey;
+        border-bottom: solid 1px rgba($gray-light, .6);
       }
     }
   }
@@ -1716,6 +1716,9 @@ body {
 
 .topic-category > a:last-of-type {
   text-indent: 5px;
+  max-width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   //font-style: italic !important;
 }
 
