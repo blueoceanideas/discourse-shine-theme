@@ -1850,11 +1850,14 @@ ol.category-breadcrumb {
 .list-controls .select-kit {
   display: flex;
   align-self: stretch;
-  /* margin-bottom: 10px; */
 }
 
 button.dropdown-select-box-header {
   padding: 10px !important;
   height: 36px !important;
   margin-bottom: 5px !important;
+}
+
+.badge-notification.new-posts, .badge-notification.unread-posts {
+  background-color: #acc2d7;
 }
