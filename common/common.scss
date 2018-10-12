@@ -1036,6 +1036,10 @@ a:hover {
   justify-content: flex-start;
   flex-wrap: wrap;
 
+  tr {
+    width: 50%;
+  }
+
   .category-list-item {
     width: 94%;
     margin: 3% !important;
