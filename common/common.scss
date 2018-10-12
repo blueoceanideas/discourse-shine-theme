@@ -1872,6 +1872,8 @@ button.dropdown-select-box-header {
 
 // menu
 .menu-panel {
+  border: 0;
+  box-shadow: 0 1px 3px black !important;
   background-color: #31509a;
   color: white;
   font-size: 16px;
@@ -1933,8 +1935,15 @@ button.dropdown-select-box-header {
 }
 
 .fa-bars:hover, .fa-search:hover {
-
   background-color: transparent !important;
   color: #31509a;
+}
 
+.header-dropdown-toggle.active i {
+  color: #31509a;
+}
+
+.menu-panel li.category-link .badge-wrapper.bar,
+.menu-panel li.category-link .badge-wrapper.bullet {
+  color: white;
 }
