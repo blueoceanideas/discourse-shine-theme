@@ -1947,3 +1947,14 @@ button.dropdown-select-box-header {
 .menu-panel li.category-link .badge-wrapper.bullet {
   color: white;
 }
+
+
+.menu-panel li.category-link {
+  width: 100%;
+}
+
+.menu-panel span.badge-category {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
