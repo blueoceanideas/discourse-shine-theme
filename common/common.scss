@@ -1962,3 +1962,405 @@ button.dropdown-select-box-header {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+// charlies styles
+body,
+body.template-msba-connect,
+h1, h2, h3, h4, h5	{
+  font-family: 'Proxima Nova';
+  font-style: normal;
+}
+h1, h2, h3, h4, h5	{
+  font-weight: bold;
+}
+
+.clear { clear:both; }
+.btn {
+  background: #28509F;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  line-height: normal;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF!important;
+  min-height:38px;
+  padding:8px 15px;
+}
+.btn.login {
+
+
+}
+.header {
+  padding: 23px 0;
+}
+.header .btn {
+  float:right;
+}
+
+.banner {
+  background:#fef9d0 url(/assets/images/msba-connect/banner-bg.png) bottom center no-repeat;
+  min-height: 622px;
+  display:block;
+  background-size: 100%!important;
+  padding: 65px 0;
+  text-align: center;
+}
+.banner h1{
+  line-height: normal;
+  font-size: 50px;
+  text-align: center;
+  color: #318252;
+  font-weight: bold;
+}
+.banner p {
+  line-height: 25px;
+  font-size: 18px;
+  text-align: center;
+  color: #4F4F4F;
+  max-width:640px;
+  display:block;
+  margin:25px auto;
+
+}
+.banner .btn {
+  background: #00B5AD;
+  box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  width: 100%;
+  display: inline-block;
+  padding: 16px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  margin: 30px;
+  max-width: 204px;
+}
+.banner .btn.blue {
+  background: #28509F;
+}
+.community-wrap .container {
+  max-width: 1010px;
+}
+.community-wrap {
+  background:#f8f8f8;
+  padding:70px 0;
+}
+.community-wrap h2 {
+  line-height: normal;
+  font-size: 34px;
+  color: #28509F;
+  margin-bottom:20px;
+}
+
+.community-wrap p.desc {
+  line-height: 25px;
+  font-size: 18px;
+  color: #4F4F4F;
+  margin-bottom:45px;
+}
+.popular-community .community-box {
+  margin:0 -25px;
+}
+.popular-community .community-box:after {
+  content: "";
+  clear:both;
+  display:block;
+}
+.popular-community .community-box .item {
+  width: 207px;
+  height: 103px;
+  display: block;
+  float: left;
+  padding: 12px;
+  border-radius: 3px;
+  background: #706FD3;
+  margin: 25px;
+  position:relative;
+}
+
+.popular-community .community-box .item p {
+  line-height: 16px;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin:0;
+  position:absolute;
+  left:12px;
+  bottom:12px;
+  right:12px;
+}
+.green-line {
+  max-width:1196px;
+  background: rgba(31, 168, 107, 0.3);
+  display:block;
+  width:100%;
+  margin:0 auto;
+  height:5px;
+}
+.community-wrap.all-community .accordion .btn {
+  line-height: normal;
+  font-size: 22px;
+  color: #28509F!important;
+  background: transparent;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: none;
+  text-align: left;
+  font-weight: 700;
+  text-decoration: none!Important;
+  padding: 15px 0;
+  white-space: inherit;
+}
+.community-wrap.all-community .accordion .btn i.icon {
+  color: #AAC2CA;
+  font-weight: 300;
+  font-size: 20px;
+}
+.community-wrap.all-community .accordion .card-header {
+  background: transparent;
+  border-bottom: 0;
+}
+.community-wrap.all-community .accordion .card {
+  border-left:0;
+  border-right:0;
+  background: transparent;
+}
+.community-wrap.all-community .accordion .card-body {
+  padding: 1rem 4rem 3rem;
+}
+.community-wrap.all-community .accordion .card-body ul {
+  list-style: none;
+  padding: 0;
+
+}
+.community-wrap.all-community .accordion .card-body,
+.community-wrap.all-community .accordion .card-body ul li {
+  line-height: 24px;
+  font-size: 18px;
+  color: #28509F;
+  margin-bottom: 5px;
+}
+
+.question-wrap {
+  background: #E0F4FC;
+  min-height: 328px;
+  padding: 45px 0;
+  margin-top: 2rem;
+}
+.question-wrap h2 {
+  line-height: normal;
+  font-size: 34px;
+  text-align: center;
+  color: #28509F;
+  margin-bottom:40px;
+}
+.question-wrap .question-box {
+  box-shadow: 0px 4px 14px #B5D5E2;
+  border-radius: 4px;
+  max-width: 465px;
+  display: block;
+  margin: 0 auto;
+  min-height: 104px;
+  padding: 45px 45px 45px 100px;
+  width: 100%;
+  background: #FFFFFF url('/assets/images/msba-connect/question-icon.png') 35px 31px no-repeat;
+}
+.question-wrap .question-box a {
+  line-height: normal;
+  font-size: 16px;
+  color: #28509F;
+}
+.your-community .container {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+.your-community .community-box {
+  max-width: 982px;
+  min-height: 397px;
+  background: rgba(198, 245, 217, 0.6);
+  border-radius: 4px;
+  padding:50px 35px;
+  margin: 0 auto;
+}
+.your-community .community-box h3 {
+  line-height: normal;
+  font-size: 23px;
+  color: #28509F;
+  margin-bottom:25px;
+}
+.your-community .community-box p {
+  line-height: 25px;
+  font-size: 18px;
+  color: #4F4F4F;
+  margin:0;
+
+}
+.your-community .community-box .row {
+  margin-top:10px;
+}
+a.flag-link {
+  line-height: 18px;
+  font-size: 16px;
+  color: #28509F;
+  display:block;
+  background: url('/assets/images/msba-connect/flag-icon.png') left calc( 50% + 5px ) no-repeat;
+  padding: 30px 30px 20px;
+  border-bottom: 2px solid rgba(49, 130, 82, 0.3);
+  font-weight: bold;
+}
+.your-community .community-box .box-foot {
+  line-height: 16px;
+  font-size: 13px;
+  color: #4F4F4F;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.your-community .community-box .box-foot a {
+  line-height: 13px;
+  font-size: 11px;
+  letter-spacing: 0.0666667em;
+  text-decoration-line: underline;
+  color: #153C8A;
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  float: right;
+}
+.search-box {
+  position: relative;
+  max-width: 569px;
+  margin: 75px auto 0;
+}
+.search-box input{
+  background: #FFFFFF;
+  border: 1px solid #C0C0C0;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 34px rgba(0, 0, 0, 0.15);
+  border-radius: 7px;
+  max-width: 569px;
+  min-height: 67px;
+  line-height: normal;
+  font-size: 16px;
+  color: #747474;
+  display:block;
+  margin:0 auto;
+  width: 100%;
+  padding: 20px;
+}
+.search-box:after {
+  content: "";
+  display:block;
+  position:absolute;
+  width:22px;
+  height:22px;
+  background: url('/assets/images/msba-connect/search-icon.png') center no-repeat;
+  top: 50%;
+  right: 20px;
+  transform: translate(0,-50%);
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  .banner {
+    min-height: 465px;
+    background-size: 1040px!important;
+    padding-top: 20px;
+  }
+  .banner h1 {
+    font-size:28px;
+    line-height: 30px;
+  }
+  .banner p { font-size:16px; }
+  .banner .btn {
+    margin: 15px 10px;
+    max-width: 143px;
+  }
+
+  .community-wrap {
+    padding: 20px 0;
+  }
+  .community-wrap h2 {
+    font-size:23px;
+  }
+  .popular-community .community-box {
+    margin: 0 -10px;
+  }
+  .community-wrap p.desc {
+    margin-bottom: 20px;
+  }
+  .popular-community .community-box .item {
+    width: 155px;
+    min-height: 120px;
+    display: inline-block;
+    float: none;
+    padding: 12px;
+    border-radius: 3px;
+    background: #706FD3;
+    margin: 10px 8px;
+    position: relative;
+    vertical-align: top;
+    height: auto;
+  }
+  .popular-community .community-box .item p {
+    line-height: 16px;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    position: relative;
+    left: inherit;
+    bottom: inherit;
+    right: inherit;
+    margin-top: 20px;
+    display: block;
+  }
+  .community-wrap.all-community .accordion .card-body,
+  .community-wrap.all-community .accordion .card-body ul li,
+  .community-wrap.all-community .accordion .btn {
+    font-size:16px;
+  }
+  .community-wrap.all-community .accordion .card-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .community-wrap.all-community .accordion .card-body {
+    padding: 1rem 2rem 3rem;
+  }
+
+  .question-wrap h2 {
+    font-size: 23px;
+  }
+
+  .question-wrap .question-box {
+    padding: 100px 45px 45px;
+    background-position: center 40px;
+    text-align:center;
+  }
+
+  .search-box {
+    margin: 25px auto 0;
+  }
+  .your-community .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .your-community .green-line {
+    display:none;
+  }
+  .your-community .community-box {
+    padding: 20px;
+  }
+  .your-community .community-box h3 {
+    margin-bottom: 10px;
+  }
+  .your-community .community-box .box-foot a {
+    float: none;
+    margin-top: 15px;
+  }
+}	
