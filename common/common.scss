@@ -1870,3 +1870,61 @@ button.dropdown-select-box-header {
   display: none !important;
 }
 
+// menu
+.menu-panel.slide-in {
+  background-color: #31509a;
+  color: white;
+  font-size: 16px;
+  padding: 30px 15px;
+}
+.menu-panel.slide-in hr {
+  opacity: 0;
+  margin: 5px 0;
+  /*! display: none; */
+}
+.menu-panel.slide-in .heading {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 11px;
+  margin-left: 8px;
+}
+
+.menu-panel.slide-in .badge-category .category-name {
+  color: white;
+}
+
+.menu-panel.slide-in .subcategory {
+  width: 100%;
+}
+
+.menu-panel.slide-in .badge-category {
+  max-width: 100%;
+}
+
+.menu-panel.slide-in .subcategory .category-name {
+  width: 100%;
+}
+
+.menu-container-general-links {
+  font-weight: 900;
+  font-size: 17px;
+  border-bottom: solid 1px white;
+  margin: 0 17px 15px;
+}
+
+.widget-link {
+  padding-left: 0 !important;
+}
+
+.menu-container-faq-link,
+.menu-container-admin-links,
+.menu-container-footer-links,
+.heading {
+  margin-left: 15px;
+}
+
+.menu-panel li a:hover, .menu-panel li a:focus, .menu-panel li.heading a:hover, .menu-panel li.heading a:focus {
+  background-color: unset;
+  text-decoration: underline;
+  outline: none;
+}
