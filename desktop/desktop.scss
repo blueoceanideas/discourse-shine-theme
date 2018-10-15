@@ -622,7 +622,9 @@ td.category > div > h3 > a {
   }
 }
 
-// desktop
+/****************************
+* Laruta - Desktop Styles
+ **************************/
 body {
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 13px;
@@ -634,4 +636,16 @@ body {
   position: relative;
   /* The height of the container. Must be set, but it doesn't really matter what the value is. */
   height: inherit;
+}
+
+.menu-panel {
+  height: unset !important;
+}
+.d-header {
+  position: static;
+}
+
+.super-nav .links li {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
