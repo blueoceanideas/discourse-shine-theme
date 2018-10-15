@@ -1099,7 +1099,7 @@ a:hover {
       }
 
       .category-title-content {
-
+        padding-top: 15px;
       }
     }
   }
@@ -1159,6 +1159,8 @@ a:hover {
     }
 
     .category-title-description {
+      padding-top: 15px;
+
       p {
         color: $white;
       }
@@ -1674,6 +1676,8 @@ body {
 
   .category-title-contents {
     .category-title-description {
+      margin-top: 15px;
+
       p {
         color: $white !important;
         line-height: 19px;
