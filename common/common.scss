@@ -198,7 +198,6 @@ button.oauth2_basic {
 .category-name {
   font-size: 1.1em;
   font-weight: 400;
-  color: $white;
 }
 .badge-wrapper.bullet span.badge-category {
   color: $text-light;
@@ -1102,11 +1101,14 @@ a:hover {
         padding-top: 15px;
       }
     }
+
+    .category-name {
+      color: $white;
+    }
   }
 
 
   .category-name {
-    color: $white;
     font-size: 16px;
     text-align: center;
   }
@@ -1721,7 +1723,6 @@ body {
   //padding: 3px;
 
   .category-name {
-    color: $white;
     font-weight: 600 !important;
   }
 }
@@ -1898,7 +1899,7 @@ button.dropdown-select-box-header {
 }
 
 .menu-panel .badge-category .category-name {
-  color: white;
+  //color: white;
 }
 
 .menu-panel .subcategory {
