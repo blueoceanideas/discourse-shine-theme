@@ -1,10 +1,13 @@
-<script type="text/x-handlebars" data-template-name="/connectors/before-topic-list-body/all-category-header">
-  <h3>All Topics in this Community</h3>
+<script>
+    I18n.translations.en.js.topic.create = "Create New Topic";
+    I18n.translations.en.js.topic.all_topics_header = "All Topics in %{category} Community";
 </script>
 
+<script type="text/x-handlebars" data-template-name="/connectors/before-topic-list-body/all-category-header">
+  <h3 id="allTopicsHeader">All Topics in this Community</h3>
+</script>
 
-<script>
-    I18n.translations.en.js.topic.create = "Create New Topic"
+<script type="text/discourse-plugin" version="0.8">
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-site-header/laruta-super-nav">
@@ -59,7 +62,7 @@
     </div>
 </script>
 
-<script type="text/discourse-plugin" version="0.8">
+<script type="text/discourse-plugin" type="text/javascript" version="0.8">
 
 // Queue up code to run after Ember does its rendering of DOM things
 Ember.run.schedule('afterRender', () => {
@@ -68,15 +71,15 @@ Ember.run.schedule('afterRender', () => {
     // since Discourse is a single page web app
     api.onPageChange(() =>{
         setCategoryBoxesBackgroundColor();
-        moveNavAndFiltersOnCategoryView();
+        //moveNavAndFiltersOnCategoryView();
     });
 
     // check if the render <html> is a mobile or desktop view
     // because there are some major, major, major differences
     const isMobileView = function () {
-        var html = document.querySelector("html");
+        let html = document.querySelector("html");
         return html.classList.contains( "mobile-view" );
-    }
+    };
 
     function moveNavAndFiltersOnCategoryView () {
         const route = Discourse.__container__.lookup('controller:application').get('currentPath');
@@ -86,7 +89,7 @@ Ember.run.schedule('afterRender', () => {
         if ( route == "discovery.parentCategory" && isMobileView ) {
 
           // Get Navigation & Filters
-          var navAndFilters = [
+          let navAndFilters = [
             "#navigation-bar",
             ".category-breadcrumb",
             ".category-notifications-button"
@@ -98,9 +101,11 @@ Ember.run.schedule('afterRender', () => {
           // Get the Row to move the filtering above
           let targetRow = topicList.parentNode.parentNode.parentNode.parentNode;
 
+
           navAndFilters.forEach( ( elem ) => {
             let node = document.querySelector( elem );
-            if ( node ) {
+            if ( !targetRow.contains( document.querySelector( elem ) ) ) {
+              //node.remove();
               targetRow.insertBefore(node, targetRow.firstChild);
             }
           } );
@@ -111,8 +116,8 @@ Ember.run.schedule('afterRender', () => {
     function setCategoryBoxesBackgroundColor () {
         // Get the Category Elements nodeList
         // then convert to an Array
-        var categoriesElems = isMobileView() ? document.querySelectorAll(".category-list > .category-list-item") : document.querySelectorAll(".category-list tr");
-        var categoriesArray = Array.prototype.slice.call( categoriesElems );
+        let categoriesElems = isMobileView() ? document.querySelectorAll(".category-list > .category-list-item") : document.querySelectorAll(".category-list tr");
+        let categoriesArray = Array.prototype.slice.call( categoriesElems );
 
         // Loop through the elements to capture border color
         // then pass it to the background color
@@ -120,7 +125,7 @@ Ember.run.schedule('afterRender', () => {
 
                 // Mobile view uses a separate table for each category
                 if ( isMobileView() ) {
-                    var categoryColor = category.style.borderColor;
+                    let categoryColor = category.style.borderColor;
 
                     // set the background color
                     category.style.backgroundColor = categoryColor;
