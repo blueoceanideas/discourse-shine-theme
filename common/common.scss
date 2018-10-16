@@ -2368,3 +2368,40 @@ a.flag-link {
     margin-top: 15px;
   }
 }
+
+// Popular Communities
+.category-list-item {
+  border-radius: 7px;
+  padding: 7px;
+  min-height: 125px;
+}
+
+.category-list-item table,
+.category-list-item tr,
+.category-list-item th {
+  height: 100% !important;
+}
+
+.category-list-item h3 {
+  height: 100%;
+  margin: 0;
+}
+
+
+.category-list-item .category-name {
+  text-align: left;
+}
+
+.category .main-link .category-title-link {
+  align-items: flex-start;
+  color: white !important;
+  height: 100%;
+}
+
+.category-title-link > div:first-of-type {
+  margin-bottom: auto;
+}
+
+.category-title-link > div:last-of-type {
+  margin-top: auto;
+}
