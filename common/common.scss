@@ -1840,7 +1840,11 @@ ol.category-breadcrumb {
     justify-content: space-between;
     flex-wrap: wrap;
     flex: 1 1 100%;
-    width: 80%;
+    width: 100%;
+}
+
+.category-notifications-button {
+  margin-left: 10px;
 }
 
 .category-drop:nth-of-type(1), .category-drop:nth-of-type(2) {
