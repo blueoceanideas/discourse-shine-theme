@@ -59,4 +59,28 @@
     </div>
 </script>
 
+<script>
+document.addEventListener( "DOMContentLoaded", function () {
+
+    // Get the Category Elements nodeList
+    // then convert to an Array
+    let categoriesElems = document.querySelectorAll(".category-list tbody tr");
+    let categoriesArray = Array.from( categoriesElems );
+
+    // Loop through the elements to capture border color
+    // then pass it to the background color
+    categoriesArray.forEach( function(category) {
+
+            console.log(category);
+
+            let categoryBox   = category.querySelector(".category");
+            let categoryColor = categoryBox.style.borderColor;
+
+            // set the background color
+            categoryBox.style.backgroundColor = categoryColor;
+        }
+    );
+} );
+</script>
+
 
