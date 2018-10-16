@@ -75,11 +75,11 @@ Ember.run.schedule('afterRender', () => {
 
             console.log(category);
 
-            //var categoryBox   = category.querySelector(".category");
-            var categoryColor = category.style.borderColor;
+            var categoryBox   = category.querySelector(".category");
+            var categoryColor = categoryBox.style.borderColor;
 
             // set the background color
-            category.style.backgroundColor = categoryColor;
+            categoryBox.style.backgroundColor = categoryColor;
         }
     );
 } );
