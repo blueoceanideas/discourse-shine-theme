@@ -71,7 +71,7 @@ Ember.run.schedule('afterRender', () => {
     // since Discourse is a single page web app
     api.onPageChange(() =>{
         setCategoryBoxesBackgroundColor();
-        //moveNavAndFiltersOnCategoryView();
+        moveNavAndFiltersOnCategoryView();
     });
 
     // check if the render <html> is a mobile or desktop view
