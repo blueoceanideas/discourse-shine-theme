@@ -62,24 +62,41 @@
 <script type="text/discourse-plugin" version="0.8">
 Ember.run.schedule('afterRender', () => {
 
+    var isMobileView = function () {
+        var html = document.querySelector("html");
+        return html.classList.contains( "mobile-view" );
+    }
+
+    console.log(isMobileView());
+
+
     // Get the Category Elements nodeList
     // then convert to an Array
-    var categoriesElems = document.querySelectorAll(".category-list tr");
+    var categoriesElems = isMobileView() ? document.querySelectorAll(".category-list > .category-list-item") : document.querySelectorAll(".category-list tr");
     var categoriesArray = Array.prototype.slice.call( categoriesElems );
 
-        console.log(document.querySelectorAll(".category-list tr"));
-        console.log(categoriesArray);
+    console.log(categoriesElems);
+    console.log(categoriesArray);
+
     // Loop through the elements to capture border color
     // then pass it to the background color
     categoriesArray.forEach( function(category) {
 
             console.log(category);
 
-            var categoryBox   = category.querySelector(".category");
-            var categoryColor = categoryBox.style.borderColor;
+            if ( isMobileView() ) {
+                var categoryColor = category.style.borderColor;
 
-            // set the background color
-            categoryBox.style.backgroundColor = categoryColor;
+                // set the background color
+                category.style.backgroundColor = categoryColor;
+            }
+            else {
+                var categoryBox   = category.querySelector(".category");
+                var categoryColor = categoryBox.style.borderColor;
+
+                // set the background color
+                category.style.backgroundColor = categoryColor;
+            }
         }
     );
 } );
