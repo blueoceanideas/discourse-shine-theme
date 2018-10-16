@@ -68,13 +68,43 @@ Ember.run.schedule('afterRender', () => {
     // since Discourse is a single page web app
     api.onPageChange(() =>{
         setCategoryBoxesBackgroundColor();
+        moveNavAndFiltersOnCategoryView();
     });
 
     // check if the render <html> is a mobile or desktop view
     // because there are some major, major, major differences
-    var isMobileView = function () {
+    const isMobileView = function () {
         var html = document.querySelector("html");
         return html.classList.contains( "mobile-view" );
+    }
+
+    function moveNavAndFiltersOnCategoryView () {
+        const route = Discourse.__container__.lookup('controller:application').get('currentPath');
+
+        console.log(route);
+
+        if ( route == "discovery.parentCategory" && isMobileView ) {
+
+          // Get Navigation & Filters
+          var navAndFilters = [
+            "#navigation-bar",
+            ".category-notifications-button",
+            ".category-breadcrumb"
+          ];
+
+          // Get the Topic List
+          const topicList = document.querySelector(".topic-list");
+
+          // Get the Row to move the filtering above
+          let targetRow = topicList.parentNode.parentNode.parentNode.parentNode;
+
+          navAndFilters.forEach( ( elem ) => {
+            let node = document.querySelector( elem );
+            if ( node ) {
+              targetRow.insertBefore(node, targetRow.firstChild);
+            }
+          } );
+        }
     }
 
 
@@ -109,5 +139,3 @@ Ember.run.schedule('afterRender', () => {
     }
 } );
 </script>
-
-
