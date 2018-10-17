@@ -62,7 +62,7 @@
     </div>
 </script>
 
-<script type="text/discourse-plugin" type="text/javascript" version="0.8">
+<script type="text/discourse-plugin" version="0.8">
 
 // Queue up code to run after Ember does its rendering of DOM things
 Ember.run.schedule('afterRender', () => {
@@ -90,9 +90,7 @@ Ember.run.schedule('afterRender', () => {
 
           // Get Navigation & Filters
           let navAndFilters = [
-            "#navigation-bar",
-            ".category-breadcrumb",
-            ".category-notifications-button"
+            ".list-controls"
           ];
 
           // Get the Topic List
@@ -103,10 +101,8 @@ Ember.run.schedule('afterRender', () => {
 
 
           navAndFilters.forEach( ( elem ) => {
-            let node = document.querySelector( elem );
             if ( !targetRow.contains( document.querySelector( elem ) ) ) {
-              //node.remove();
-              targetRow.insertBefore(node, targetRow.firstChild);
+              targetRow.insertBefore(document.querySelector( elem ), targetRow.firstChild);
             }
           } );
         }
