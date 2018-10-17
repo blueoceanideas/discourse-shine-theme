@@ -1990,3 +1990,19 @@ button.dropdown-select-box-header {
 .category-title-link > div:last-of-type {
   margin-top: auto;
 }
+
+.mobile-connect-super-nav {
+  display: flex !important;
+  justify-content: flex-end;
+
+  a {
+    color: white;
+    display: block;
+    padding: 15px;
+    margin: 0;
+  }
+
+  @media( min-width: 768px ) {
+    display: none;
+  }
+}
