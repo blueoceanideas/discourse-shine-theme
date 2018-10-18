@@ -2073,3 +2073,9 @@ button.dropdown-select-box-header {
 .top-section h3 {
   margin-bottom: 0;
 }
+
+.save-or-cancel {
+  button.create {
+    width: unset !important;
+  }
+}
