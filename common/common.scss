@@ -1393,7 +1393,6 @@ body.navigation-categories {
       font-size: 14px;
 
       .badge-category {
-
       }
     }
 
@@ -1883,6 +1882,7 @@ button.dropdown-select-box-header {
   }
 
   span.badge-category {
+    color: $white !important;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1993,7 +1993,7 @@ button.dropdown-select-box-header {
 
 .mobile-connect-super-nav {
   background-color: $gray-darker;
-  display: flex !important;
+  display: flex;
   justify-content: flex-end;
 
   a {
@@ -2006,4 +2006,22 @@ button.dropdown-select-box-header {
   @media( min-width: 768px ) {
     display: none;
   }
+}
+
+// Make the Footer appear sticky on the search page
+.search-container {
+
+  // moves the checkbox up to the top
+  justify-content: flex-start;
+
+  // set min height to span most of the viewport height
+  min-height: 70vh;
+}
+
+.user-menu .notifications li {
+  background-color: unset;
+}
+
+.user-menu .notifications .read {
+  background-color: unset;
 }
