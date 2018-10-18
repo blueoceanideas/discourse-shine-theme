@@ -2051,3 +2051,25 @@ button.dropdown-select-box-header {
   line-height: 21px;
   color: #333;
 }
+
+.badge-wrapper.bar span.badge-category {
+  padding: unset !important;
+}
+
+.mobile-view .mobile-nav {
+  width: 49%;
+}
+
+// Hide Trust Level data on profile page
+.trust-level {
+  display: none !important;
+}
+
+.top-section p {
+  text-align: left;
+  margin-top: 0;
+}
+
+.top-section h3 {
+  margin-bottom: 0;
+}
