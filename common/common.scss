@@ -2018,10 +2018,33 @@ button.dropdown-select-box-header {
   min-height: 70vh;
 }
 
+// User Profile & Menu
 .user-menu .notifications li {
   background-color: unset;
 }
 
 .user-menu .notifications .read {
   background-color: unset;
+}
+
+// User Main Element
+.user-main .about.collapsed-info .details {
+  background-color: #f8f8f8;
+  border-bottom: solid 1px gray;
+  padding: 15px 0;
+  margin-bottom: 15px;
+}
+
+.user-main .about {
+  background: unset;
+}
+
+// User Stream
+.user-stream .title {
+  font-weight: bold;
+  font-size: 16px !important;
+}
+
+.user-stream .excerpt {
+  text-align: left;
 }
