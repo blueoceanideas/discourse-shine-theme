@@ -1035,7 +1035,9 @@ a:hover {
   flex-wrap: wrap;
 
   tr {
-    width: 50% !important;
+    @media ( max-width: 768px ) {
+      width: 50% !important;
+    }
   }
 
   .category-list-item {
@@ -2098,4 +2100,13 @@ p {
   color: #333;
   background-color: #FFDA21;
   font-weight: 700;
+}
+
+/*
+ Hide Topic List Footer
+ (Tells the user it is the end of the stream)
+ */
+.footer-message,
+.suggested-topics-message {
+  display: none;
 }
