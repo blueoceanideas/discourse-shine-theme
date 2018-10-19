@@ -1806,8 +1806,7 @@ ol.category-breadcrumb {
   }
 }
 
-button.dropdown-select-box-header {
-  padding: 10px !important;
+.category-notifications-button {
   height: 36px !important;
   margin-bottom: 5px !important;
 }
@@ -2115,4 +2114,13 @@ p {
   height: 12px;
   padding: 1px;
   background-color: #FFDA21;
+}
+
+
+/* Time Range Dropdown
+( Appears when sorting by 'top' )
+ */
+.period-chooser-header, .period-chooser-header h2 {
+  padding-left: 0 !important;
+  margin-left: 0;
 }
