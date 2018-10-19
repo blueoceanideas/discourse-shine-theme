@@ -1865,7 +1865,8 @@ button.dropdown-select-box-header {
   display: none !important;
 }
 
-.select-kit-row[data-name=Invite] {
+.select-kit-row[data-name=Invite],
+.select-kit-row[data-name=Share] {
   display: none !important;
 }
 
