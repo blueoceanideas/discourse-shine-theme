@@ -109,6 +109,21 @@ Ember.run.schedule('afterRender', () => {
         }
     }
 
+    function linkToTopicListIfFiltered () {
+
+        // Check if the page url contains "/l/" in it,
+        // and send to the topic list if it does
+         if( /\/l\//.test(window.location.href) ) {
+           var url = window.location.href;
+
+           let topicListHeaderId = "#allTopicsHeader";
+
+           if ( !url.includes(topicListHeaderId) ){
+             newUrl = url + topicListHeaderId;
+             window.location.replace(newUrl);
+           }
+         }
+     }
 
     function setCategoryBoxesBackgroundColor () {
         // Get the Category Elements nodeList
