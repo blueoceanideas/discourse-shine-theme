@@ -1627,8 +1627,10 @@ body {
   color: black !important;
 
     &:hover {
+      background-color: darken( '#FFDA21', .8);
+
       i {
-        color: $black !important;
+        color: $black;
       }
     }
 }
