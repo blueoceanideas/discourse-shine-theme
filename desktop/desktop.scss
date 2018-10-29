@@ -649,3 +649,27 @@ body {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+
+// category page
+.category-boxes, .category-boxes-with-topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.category-boxes, .category-boxes-with-topics {
+  flex-direction: row;
+}
+
+.category-boxes .category-box, .category-boxes-with-topics .category-box {
+  text-align: left;
+  border-left: 0 !important;
+  border-bottom: solid 1px lightgray !important;
+  width: 30% !important;
+  margin: 0;
+  padding: 15px 0;
+}
