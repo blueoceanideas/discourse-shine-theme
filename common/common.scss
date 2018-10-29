@@ -1625,38 +1625,6 @@ body {
 /****************************
 * Tweaks to Topic Page
 *************************************/
-.topic-category > a {
-  display: inline;
-
-  &:first-of-type {
-    font-style: normal !important;
-    max-width: 20%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    .category-name {
-      font-weight: 600 !important;
-    }
-
-  > span {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
-  }
-}
-
-  &:last-of-type {
-    text-indent: 5px;
-    max-width: 70%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-    &:before {
-      content: "/";
-      border-bottom: 0 !important;
-    }
-  }
-}
 
 
 .title-wrapper h1 .fancy-title {
