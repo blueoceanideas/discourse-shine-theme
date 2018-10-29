@@ -690,6 +690,7 @@ body {
   padding: 0 15px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .category-title-header {
@@ -698,11 +699,13 @@ body {
   text-align: left !important;
   width: 100%;
   justify-content: center;
-
 }
 
 .category-title-image, .category-logo {
   max-width: 50% !important;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btn {
