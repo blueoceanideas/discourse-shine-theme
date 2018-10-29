@@ -529,3 +529,22 @@ button.create {
     border-top: solid 1px lightgray;
   }
 }
+
+.topic-footer-main-buttons {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/****************************
+* Topic Page Footer Buttons  (Topic Page)
+ *******************************************/
+#topic-footer-buttons {
+
+  .topic-notifications-button {
+    display: flex;
+    flex-direction: column;
+
+    .btn {
+    }
+  }
+}
