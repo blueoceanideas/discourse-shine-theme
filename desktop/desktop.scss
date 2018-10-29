@@ -728,3 +728,11 @@ body {
     width: 900px;
   }
 }
+
+.topic-meta-data {
+  height: 50px;
+}
+
+.topic-avatar, .topic-body {
+  border-top: 0 !important;
+}
