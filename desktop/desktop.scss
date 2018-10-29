@@ -693,7 +693,12 @@ body {
 }
 
 .category-title-header {
+  padding-top: 30px;
+  display: flex;
   text-align: left !important;
+  width: 100%;
+  justify-content: center;
+
 }
 
 .category-title-image, .category-logo {
@@ -714,4 +719,12 @@ body {
   transition: all 0.25s;
   box-sizing: border-box;
   min-height: 30px;
+}
+
+.post-stream {
+  width: 800px;
+
+  @media ( min-width: 1140px ) {
+    width: 900px;
+  }
 }
