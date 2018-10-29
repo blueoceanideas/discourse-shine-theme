@@ -736,3 +736,8 @@ body {
 .topic-avatar, .topic-body {
   border-top: 0 !important;
 }
+
+.topic-map .map .secondary {
+  display: flex;
+  flex-direction: column-reverse;
+}

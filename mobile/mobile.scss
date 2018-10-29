@@ -515,8 +515,17 @@ button.create {
 }
 
 .topic-meta-data {
+  flex-direction: column;
+
   .names {
     margin-right: unset;
     flex: unset;
+  }
+}
+
+.topic-body {
+  .regular {
+    margin-top: 30px;
+    border-top: solid 1px lightgray;
   }
 }

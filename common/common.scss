@@ -1389,19 +1389,10 @@ body.navigation-categories {
   }
 
   .topic-meta-data {
-    flex-direction: column;
 
     .post-date:before {
       //color: gray;
       //content: 'posted ';
-    }
-  }
-
-  .topic-body {
-
-    .regular {
-      margin-top: 30px;
-      border-top: solid 1px lightgray;
     }
   }
 
