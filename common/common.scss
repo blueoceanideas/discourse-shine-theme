@@ -2035,3 +2035,11 @@ p {
   padding-left: 0 !important;
   margin-left: 0;
 }
+
+.category-boxes-with-topics .featured-topics li::before {
+  content: "";
+}
+
+.category-boxes-with-topics .featured-topics li {
+  margin-left: 0;
+}
