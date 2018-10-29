@@ -626,13 +626,10 @@ td.category > div > h3 > a {
 * Laruta - Desktop Styles
  **************************/
 header {
-  margin-bottom: 0;m
+  margin-bottom: 0;
 }
 
 body {
-  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
-  perspective: 13px;
-  height: 100vh;
 }
 
 .laruta-header {
@@ -696,11 +693,25 @@ body {
 }
 
 .category-title-header {
-  text-align: left;
+  text-align: left !important;
 }
 
 .category-title-image, .category-logo {
   max-width: 50% !important;
 }
 
-
+.btn {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 9px 12px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  min-height: 30px;
+}
