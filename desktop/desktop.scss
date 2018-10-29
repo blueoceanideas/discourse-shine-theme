@@ -625,6 +625,10 @@ td.category > div > h3 > a {
 /****************************
 * Laruta - Desktop Styles
  **************************/
+header {
+  margin-bottom: 0;m
+}
+
 body {
   /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
   perspective: 13px;
@@ -681,3 +685,22 @@ body {
 #allTopicsHeader {
   display: none;
 }
+
+
+// category banners
+.category-title-header .category-title-contents {
+  max-width: 1180px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+}
+
+.category-title-header {
+  text-align: left;
+}
+
+.category-title-image, .category-logo {
+  max-width: 50% !important;
+}
+
+
