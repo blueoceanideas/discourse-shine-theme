@@ -975,47 +975,7 @@ a:hover {
 *
 *
  **************************/
-.edit-category {
-  // @TODO: this may need to move to .btn or .btn-default
-  margin: 0 3px;
-  width: 98%;
-  display: inline-block;
-  padding: 15px 0;
-  text-align: center;
-}
 
-/****************************
-* Create Topic Button
-* (also the Open Draft Button)
- *****************************/
-#create-topic {
-  align-self: stretch;
-  align-items: center;
-  background-color: #28509F !important;
-  border-radius: 0 !important;
-  border: solid 1px #545efc;
-  box-sizing: border-box;
-  color: white !important;
-  display: flex;
-  justify-content: center;
-  margin: 0 3px 10px 3px;
-  order: 10;
-  padding: 15px 0;
-  text-align: center;
-  width: 98%;
-
-  &:disabled {
-    display: none;
-  }
-
-  i {
-
-  }
-
-  span {
-
-  }
-}
 
 /****************************
 * Components
@@ -1627,7 +1587,7 @@ body {
   color: black !important;
 
     &:hover {
-      background-color: darken( '#FFDA21', .8);
+      background-color: darken(#FFDA21, .8);
 
       i {
         color: $black;
