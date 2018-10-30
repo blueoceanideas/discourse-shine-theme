@@ -502,7 +502,8 @@ td.category > div > h3 > a {
 }
 
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  padding: 8.8px;
+  padding: 20px;
+  display: flex !important;
 }
 
 .category {
@@ -760,4 +761,9 @@ body {
 .featured-topics ul li {
   padding: 8px 0 !important;
   line-height: 20px;
+}
+
+
+.bootbox.modal {
+  left: 0%;
 }
