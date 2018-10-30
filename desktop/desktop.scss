@@ -764,7 +764,6 @@ body {
   line-height: 20px;
 }
 
-
 .bootbox.modal {
   left: 0%;
 }
@@ -773,4 +772,17 @@ ol.category-breadcrumb {
   width: 50%;
   margin: 0 40% 0 0;
   padding-bottom: 30px;
+}
+
+.topic-avatar {
+  padding-top: 0;
+}
+
+.topic-body {
+  //width: calc(690px + (11px * 2));
+  //float: left;
+  position: relative;
+  z-index: 1;
+  border-top: 1px solid #e3ebf2;
+  padding: 0;
 }
