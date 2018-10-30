@@ -779,8 +779,8 @@ ol.category-breadcrumb {
 }
 
 .topic-body {
-  //width: calc(690px + (11px * 2));
-  //float: left;
+  width: unset;
+  float: unset;
   position: relative;
   z-index: 1;
   border-top: 1px solid #e3ebf2;
