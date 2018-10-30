@@ -689,31 +689,6 @@ body {
   display: none;
 }
 
-
-// category banners
-.category-title-header .category-title-contents {
-  max-width: 1180px;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.category-title-header {
-  padding-top: 30px;
-  display: flex;
-  text-align: left !important;
-  width: 100%;
-  justify-content: center;
-}
-
-.category-title-image, .category-logo {
-  max-width: 50% !important;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .btn {
   display: inline-block;
   margin: 0;
