@@ -82,7 +82,7 @@ ol.category-breadcrumb {
   margin-bottom: 8px;
 
   li {
-    border-radius: 20px;
+    //border-radius: 20px;
     overflow: hidden;
   }
 }
@@ -174,7 +174,7 @@ ol.category-breadcrumb {
 .btn.dropdown-toggle {
   padding: 10px 20px;
   height: 40px;
-  border-radius: 20px;
+  //border-radius: 20px;
 
   .fa-bars {
     margin-right: 10px;
@@ -267,7 +267,7 @@ nav.post-controls {
   }
 
   button.d-hover {
-    border-radius: 2em;
+    //border-radius: 2em;
   }
 
   button.create.d-hover {
@@ -307,7 +307,7 @@ nav.post-controls {
 }
 
 #topic-footer-buttons .btn {
-  border-radius: 2em;
+  //border-radius: 2em;
   border-width: 0;
 }
 
@@ -350,7 +350,7 @@ nav.post-controls {
 }
 
 .btn-small {
-  border-radius: 2em;
+  //border-radius: 2em;
 }
 
 #reply-control .d-editor-button-bar {
@@ -426,7 +426,7 @@ table.categoryStats td {
 .widget-button {
   color: $black !important;
   transition: background-color 0.2s, color 0.2s;
-  border-radius: 18px !important;
+  //border-radius: 18px !important;
 
   .fa {
     color: inherit !important;
