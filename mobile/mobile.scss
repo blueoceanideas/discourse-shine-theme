@@ -581,3 +581,11 @@ button.create {
     right: -17px;
   }
 }
+
+/****************************
+* Mobile Nav Menu Panels
+ **************************/
+.menu-panel {
+  height: 100% !important;
+  transition: all 0.35s ease-in-out;
+}
