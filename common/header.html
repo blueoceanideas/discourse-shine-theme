@@ -53,6 +53,7 @@ Ember.run.schedule('afterRender', () => {
         console.log(route);
 
         if ( route == "discovery.parentCategory" ) {
+            console.log("moveNavAndFiltersOnCategoryView");
 
           // Get Navigation & Filters
           let navAndFilters = [
@@ -64,6 +65,7 @@ Ember.run.schedule('afterRender', () => {
 
           // Get the Row to move the filtering above
           let targetRow = topicList.parentNode.parentNode.parentNode.parentNode;
+          console.log(targetRow);
 
 
           navAndFilters.forEach( ( elem ) => {
