@@ -502,8 +502,13 @@ td.category > div > h3 > a {
 }
 
 .select-kit.dropdown-select-box .dropdown-select-box-header {
-  padding: 15px;
   display: flex !important;
+}
+
+.list-controls {
+  .select-kit.dropdown-select-box .dropdown-select-box-header {
+    padding: 15px;
+  }
 }
 
 .category {
