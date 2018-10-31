@@ -2025,3 +2025,36 @@ p {
 .category-boxes-with-topics .featured-topics li {
   margin-left: 0;
 }
+
+// Topic Page Badge Category Bars
+.topic-category > a {
+
+  &:first-of-type {
+    font-style: normal !important;
+    max-width: 20%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    .category-name {
+      font-weight: 600 !important;
+    }
+
+    > span {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+  }
+
+  &:last-of-type {
+    text-indent: 5px;
+    max-width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:before {
+      content: "/";
+      border-bottom: 0 !important;
+    }
+  }
+}

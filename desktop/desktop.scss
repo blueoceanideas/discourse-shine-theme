@@ -783,3 +783,7 @@ ol.category-breadcrumb {
   border-top: 1px solid #e3ebf2;
   padding: 0;
 }
+
+.topic-category > a:first-of-type {
+  max-width: 20%;
+}
