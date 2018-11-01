@@ -681,20 +681,32 @@ body {
 
 
 // category banners
-.category-title-header .category-title-contents {
-  max-width: 1180px;
-  padding: 0 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
 
 .category-title-header {
   padding-top: 30px;
   display: flex;
-  text-align: left !important;
   width: 100%;
   justify-content: center;
+
+  &[data-uploaded-logo='has-uploaded-logo'] {
+    .category-name {
+      text-align: left;
+    }
+  }
+
+  &[data-uploaded-logo='no-uploaded-logo'] {
+    .category-name {
+      text-align: center;
+    }
+  }
+
+  .category-title-contents {
+    max-width: 1180px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .category-title-image, .category-logo {

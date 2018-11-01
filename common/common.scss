@@ -1096,11 +1096,8 @@ a:hover {
   }
 
   &[data-uploaded-logo='no-uploaded-logo'] {
-    &,
-    p,
-    .category-title-contents,
-    .category-title-description {
-
+    .category-title-content {
+      text-align: center;
     }
   }
 
