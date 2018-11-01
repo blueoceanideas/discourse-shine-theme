@@ -2070,3 +2070,12 @@ p {
     }
   }
 }
+
+#reply-control.draft, #reply-control.saving {
+  height: 40px !important;
+  align-items: center;
+  background: #FFDA21;
+  color: #fff;
+  flex-direction: row;
+  width: 100%;
+}
