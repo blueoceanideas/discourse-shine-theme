@@ -683,7 +683,7 @@ body {
 // category banners
 
 .category-title-header {
-  padding-top: 30px;
+  padding-top: 30px !important;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -719,7 +719,6 @@ body {
 }
 
 .category-title-image, .category-logo {
-  max-width: 50% !important;
   text-align: right;
   display: flex;
   justify-content: flex-end;
