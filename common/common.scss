@@ -2084,10 +2084,9 @@ p {
 }
 
 .timeline-container .topic-timeline .timeline-handle {
-  border-radius: 0.8em;
-  width: 0.35em;
   background-color: $secondary-color;
-  height: 100%;
-  float: left;
-  z-index: 2;
+}
+
+.timeline-container .topic-timeline .timeline-scrollarea {
+  border-color: $secondary-color;
 }
