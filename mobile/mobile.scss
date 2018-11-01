@@ -568,7 +568,7 @@ ol.category-breadcrumb {
 }
 
 // top of content padding
-.category-title-header {
+.category-title-header[data-uploaded-logo=no-uploaded-logo] {
   padding: 0;
 }
 
