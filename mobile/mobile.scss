@@ -566,3 +566,12 @@ ol.category-breadcrumb {
   flex: 1 1 100%;
   width: 100%;
 }
+
+// top of content padding
+.category-title-header {
+  padding: 0;
+}
+
+.category-header #main-outlet {
+  padding-top: 0;
+}
