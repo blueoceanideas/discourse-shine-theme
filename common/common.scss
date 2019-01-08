@@ -1548,7 +1548,9 @@ body.navigation-categories {
 * Background Image for LaRuta Header
  ************************************/
 body {
-
+  background: rgb(255,250,200);
+  background: linear-gradient(180deg, #fffac8 0%, rgba(248,248,248,0) 20%);
+  min-width: 320px;
   overflow-x: hidden;
   overflow-y: auto;
 }
