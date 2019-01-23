@@ -1,0 +1,15 @@
+site: MSBA
+
+primary_color:
+  type: enum
+  choices:
+    - red
+    - orange
+    - yellow
+
+secondary_color:
+  type: enum
+  choices:
+    - pink
+    - red
+    - green
