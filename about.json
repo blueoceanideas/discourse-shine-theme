@@ -1,9 +1,41 @@
 {
   "name": "LaRuta",
-  "about_url": "URL",
-  "license_url": "URL",
-  "assets": {
-  },
   "color_schemes": {
+    "MSBA": {
+      "primary": "203243",
+      "secondary": "f8f8f8",
+      "tertiary": "048c86",
+      "quaternary": "5e99b9",
+      "header_background": "fcfeff",
+      "header_primary": "ffffff",
+      "highlight": "86bddb",
+      "danger": "bf3c3c",
+      "success": "ffcf01",
+      "love": "fc94cb"
+    },
+    "MACPA": {
+      "primary": "203243",
+      "secondary": "f8f8f8",
+      "tertiary": "048c86",
+      "quaternary": "5e99b9",
+      "header_background": "fcfeff",
+      "header_primary": "ffffff",
+      "highlight": "86bddb",
+      "danger": "bf3c3c",
+      "success": "ffcf01",
+      "love": "fc94cb"
+    },
+    "COCPA": {
+      "primary": "203243",
+      "secondary": "f8f8f8",
+      "tertiary": "048c86",
+      "quaternary": "5e99b9",
+      "header_background": "fcfeff",
+      "header_primary": "ffffff",
+      "highlight": "86bddb",
+      "danger": "bf3c3c",
+      "success": "ffcf01",
+      "love": "fc94cb"
+    }
   }
 }
