@@ -1,1 +1,4 @@
-simple_setting: true
+boolean: true
+integer: 5
+float: 16.7
+string: MSBA
