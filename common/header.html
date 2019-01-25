@@ -33,6 +33,15 @@
 // Queue up code to run after Ember does its rendering of DOM things
 Ember.run.schedule('afterRender', () => {
 
+    const larutaPages     = [ 'connect', 'how-to-use-connect' ];
+    const siteLogoLink    = document.querySelector(".d-header .title a");
+    const menuPanelParent = document.querySelector(".panel.clearfix");
+
+    // Redirect Logo Link in Header to the Landing Page
+    siteLogoLink.addEventListener("click", (event) => {
+        redirectToLarutaPage( 'connect' );
+    });
+
     // api.onPageChange is the closest thing to a "page refresh"
     // since Discourse is a single page web app
     api.onPageChange(() =>{
@@ -120,6 +129,13 @@ Ember.run.schedule('afterRender', () => {
                 }
             }
         );
+    }
+
+    function redirectToLarutaPage( pageUrl ){
+      event.preventDefault();
+      if( larutaPages.includes( pageUrl ) ){
+        window.location.replace( 'https://msba.demo.laruta.io/' + pageUrl );
+      }
     }
 } );
 </script>
