@@ -2112,6 +2112,20 @@ p {
   display: none;
 }
 
+
+// changes 1/25/19
+.topic-count{
+  display:none;
+}
+
+.fa.d-icon.d-icon-lock.svg-icon.svg-string{
+  color:gray;
+}
+
+.badge-wrapper .badge-category .category-name{
+  color:#fff;
+}
+
 .category-drop-header .category-name {
   color: $white;
 }
