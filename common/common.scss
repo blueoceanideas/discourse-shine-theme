@@ -224,6 +224,7 @@ button.oauth2_basic {
   font-size: 1.1em;
   font-weight: 400;
 }
+
 .badge-wrapper.bullet span.badge-category {
   color: $text-light;
 }
@@ -1764,7 +1765,7 @@ ol.category-breadcrumb {
   }
 
   span.badge-category {
-    color: $white !important;
+    //color: $white !important;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2109,4 +2110,16 @@ p {
 
 .delete-account {
   display: none;
+}
+
+.category-drop-header .category-name {
+  color: $white;
+}
+
+ul.select-kit-collection .category-status .category-name {
+  color: $gray-dark;
+}
+
+.category-drop .category-name {
+  color: $purple;
 }
