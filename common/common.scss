@@ -2119,11 +2119,11 @@ p {
 }
 
 .fa.d-icon.d-icon-lock.svg-icon.svg-string{
-  color:gray;
+  color: $gray-darker;
 }
 
 .badge-wrapper .badge-category .category-name{
-  color:#fff;
+  color: $white;
 }
 
 .category-drop-header .category-name {
@@ -2135,5 +2135,5 @@ ul.select-kit-collection .category-status .category-name {
 }
 
 .category-drop .category-name {
-  color: $purple;
+  color: $white;
 }
