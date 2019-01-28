@@ -1,9 +1,37 @@
+/***************************
+* Import Source Sans Pro from Google Foonts
+ */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i');
-@import 'common/foundation/variables';
+
+
+
+
+
+
+
+
+
+
 
 /***************************
-*  Bootstrap
+*
+*
+ */
+@import 'common/foundation/variables';
+
+
+
+
+
+
+
+
+
+
+/***************************
+* Bootstrap
 * As painful as this is looks, The quickest way to match discourse's look w/ Laruta's was to import bootstrap inline.
+* (This is primarily used for the super nav and footer)
  */
 .bootstrap {
   /*!
@@ -16,18 +44,28 @@
 }
 /*
 *
-* End Bootsrap
+* End Bootstrap
  */
+
+
+
+
+
+
+
+
+
+
 
 /*
 *
-* Shine Theme
-*
+* Shine Theme (Forked)
+* @TODO: I actually think we could do w/o the shine theme and should actually some create the theme ourselves totally.
  */
 
-// -------------------------
-// Colors
-// -------------------------
+// -----------------------------------------
+// Colors (Defined for Shine Theme)
+// --------------------------------------
 $white: #fff;
 $black: #333;
 $red: #a22;
@@ -302,6 +340,18 @@ a.mention-group {
     }
   }
 }
+/***************************
+*  End Shine Theme
+ ***************************/
+
+
+
+
+
+
+
+
+
 
 
 //
@@ -313,51 +363,41 @@ a.mention-group {
 // Contains the color palette, classes, mixins and variables for the site colors.
 
 // Black + White + Grayscales
-$black: #000;
-$white: #fff;
-$gray-lighter: #e9e9e9;
-$gray-light: #adadad;
-$gray-dark: #4f4f4f;
-$gray-darker: #2a2a2a;
-$gray-scale: 'gray-lighter' $gray-lighter, 'gray-light' $gray-light, 'gray-dark' $gray-dark, 'gray-darker' $gray-darker;
+$black: #{$black};
+$white: #{$white};
+$gray-lighter: #{$gray-lighter};
+$gray-light: #{$gray-light};
+$gray-dark: #{$gray-dark};
+$gray-darker: #{$gray-darker};
 
 // Primary Colors
-$primary-tint: #FFF2BA; // #FFEEA6
-$primary-color: #FFD524; // #FFCF06
-$primary-shade: #D9AF00; // #AD8F10
-
+$primary-tint: #{$primary-tint}; 
+$primary-color: #{$primary-color};
+$primary-shade: #{$primary-shade};
 
 // Secondary Colors
-$secondary-tint: #CDDCFA;
-$secondary-color: #28509F;
-$secondary-shade: #153C8A;
-$secondaries: 'color' $secondary-color, 'tint' $secondary-tint, 'shade' $secondary-shade;
+$secondary-tint: #{$secondary-tint};
+$secondary-color: #{$secondary-color};
+$secondary-shade: #{$secondary-shade};
 
 // Neutral Colors
-$neutral-tint: #C2FFFC; // #EDD4D1
-$neutral-color: #3CC7C1; // #A75245
-$neutral-shade: #048C86; // #8F3628
-$neutrals: 'color' $neutral-color, 'tint' $neutral-tint, 'shade' $neutral-shade;
+$neutral-tint: #{$neutral-tint};
+$neutral-color: #{$neutral-color};
+$neutral-shade: #{$neutral-shade};
 
 // Breakout Colors
-$breakout-tint: #C6F5D9; // #C6F5D9
-$breakout-color: #4FB076; // #4FB076
-$breakout-shade: #318252; // #318252
-$breakouts: 'color' $breakout-color, 'tint' $breakout-tint, 'shade' $breakout-shade;
+$breakout-tint: #{$breakout-tint};
+$breakout-color: #{$breakout-color};
+$breakout-shade: #{$breakout-shade};
 
 // Accent Colors
-$accent-tint: #E5B6AE; // #C2FFFC
-$accent-color: #A75245; // #3CC7C1
-$accent-shade: #8F3628; // #048C86
-$accents: 'color' $accent-color, 'tint' $accent-tint, 'shade' $accent-shade;
+$accent-tint: #{$accent-tint};
+$accent-color: #{$accent-color};
+$accent-shade: #{$accent-shade};
 
 // Background Colors
-$bg-color-1: #fdf8f8;
-$bg-color-2: #f1f5fa;
-// Lists (for class other molecule declarations)
-$colors: 'primary', 'secondary', 'neutral', 'breakout', 'accent';
-$mixes:  'color', 'tint', 'shade';
-$grays:  'light', 'lighter', 'dark', 'darker';
+$bg-color-1: #{$bg-color-1};
+$bg-color-2: #{$bg-color-2};
 
 /**
 * Fonts
@@ -411,7 +451,7 @@ $border-radius: 4px;
 /**
 * Shadows
  **/
-$shadow-color-default: rgba($black, 0.24);
+//$shadow-color-default: rgba($black, 0.24);
 
 // Variables
 $lrt-gray: #4F4F4F;
@@ -487,7 +527,7 @@ a:hover {
       span{
         display: inline-block;
         padding-left: .5rem;
-        color: darken($gray-light, .7);
+        //color: darken($gray-light, .7);
       }
     }
 
@@ -517,10 +557,10 @@ a:hover {
 
       .dropdown-toggle,
       .dropdown-menu {
-        background-color: rgba($gray-darker, .9) !important;
+        //background-color: rgba($gray-darker, .9) !important;
 
         & .dropdown-item:hover {
-          background-color: rgba($gray-darker, 1) !important;
+          //background-color: rgba($gray-darker, 1) !important;
         }
       }
 
@@ -1455,8 +1495,8 @@ body.navigation-categories {
 * Topic Page Footer Buttons  (Topic Page)
  *******************************************/
 #topic-footer-buttons {
-  border-top: solid 1px rgba($gray-light, .6);
-  border-bottom: solid 1px rgba($gray-light, .6);
+  //border-top: solid 1px rgba($gray-light, .6);
+  //border-bottom: solid 1px rgba($gray-light, .6);
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -1485,15 +1525,15 @@ body.navigation-categories {
     margin: 15px;
     padding: 0;
     background-color: white;
-    box-shadow: 0 0 3px  rgba($gray-light, .6);
+    //box-shadow: 0 0 3px  rgba($gray-light, .6);
     border-radius: 11px;
-    border: solid 1px  rgba($gray-light, .6);
+    //border: solid 1px  rgba($gray-light, .6);
 
     tr{
       padding: 0 15px;
 
       &:not(:last-of-type) {
-        border-bottom: solid 1px rgba($gray-light, .6);
+        //border-bottom: solid 1px rgba($gray-light, .6);
       }
     }
   }
