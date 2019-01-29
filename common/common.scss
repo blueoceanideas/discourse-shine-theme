@@ -1672,8 +1672,12 @@ body {
   max-width: 100% !important;
 }
 
-.d-header #site-logo {
-  max-width: unset !important;
+.d-header {
+  margin-bottom: 0 !important;
+
+  #site-logo {
+    max-width: unset !important;
+  }
 }
 
 /****************************
