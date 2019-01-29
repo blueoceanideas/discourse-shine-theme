@@ -1,12 +1,6 @@
 # Blacks / Whites / Grays
-black:
-  type: string
-  default: '#000000'
-
-white:
-  type: string
-  default: '#ffffff'
-  
+black: '#000000'
+white: '#ffffff'
 gray-lighter: '#e9e9e9'
 gray-light: '#adadad'
 gray-dark: '#4f4f4f'
