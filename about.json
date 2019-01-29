@@ -2,9 +2,9 @@
   "name": "LaRuta",
   "color_schemes": {
     "MSBA": {
-      "primary": "28509F",
+      "primary": "4f4f4f",
       "secondary": "f8f8f8",
-      "tertiary": "048c86",
+      "tertiary": "28509F",
       "quaternary": "4f4f4f",
       "header_background": "f8f8f8",
       "header_primary": "f8f8f8",
