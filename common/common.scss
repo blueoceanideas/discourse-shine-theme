@@ -1112,7 +1112,7 @@ a:hover {
     }
 
     .category-name {
-      color: $white;
+      //color: $white;
     }
   }
 
@@ -2182,4 +2182,9 @@ ul.select-kit-collection .category-status .category-name {
 
 .category-drop .category-name {
   //color: $white;
+}
+
+// Hide the all categories link in the category dropdown
+li[data-value="all-categories"] {
+  display: none !important;
 }
