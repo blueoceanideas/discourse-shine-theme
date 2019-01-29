@@ -354,13 +354,16 @@ a.mention-group {
 
 
 
-//
-// Laruta
-//
+/*********************************
+* Laruta
+******************************************/
 
-// MSBA / Atoms / Colors
+// Atoms / Colors
 // Source: Figma Style Guide
 // Contains the color palette, classes, mixins and variables for the site colors.
+
+// For Discourse/Connect:
+// Variables defined in settings.yml
 
 // Black + White + Grayscales
 $black: #{$black};
@@ -451,6 +454,7 @@ $border-radius: 4px;
 /**
 * Shadows
  **/
+// @TODO: figure out how to get these working with the custom theme vars
 //$shadow-color-default: rgba($black, 0.24);
 
 // Variables
@@ -540,7 +544,9 @@ a:hover {
     color: $white;
     font-size: 16px;
 
-    a { color: $white; }
+    a {
+      //color: $white;
+    }
 
     .login {
       align-items: center;
@@ -682,7 +688,7 @@ a:hover {
     background-size: contain;
   }
 
-  /****************************
+/****************************
 * Featured Groups
 * (part of laruta header)
  **************************/
@@ -970,7 +976,10 @@ a:hover {
 
   .unread-notifications {
     left: auto;
-    background-color: #4dfaf2;
+    width: 12px;
+    height: 12px;
+    padding: 1px;
+    background-color: $primary-color;
   }
 }
 
@@ -1596,9 +1605,9 @@ body {
   overflow-y: auto;
 }
 
-/****************************
-* Lock Icon
-*************************************/
+/************************************************
+* Lock Icon (For Locked Categories/Sections)
+************************************************/
 .fa.fa-lock.d-icon.d-icon-lock {
   display: none;
 }
@@ -1776,9 +1785,15 @@ ol.category-breadcrumb {
   margin-bottom: 5px !important;
 }
 
-.badge-notification.new-posts,
-.badge-notification.unread-posts {
-  background-color: #acc2d7;
+.badge-notification {
+  color: #333;
+  background-color: #FFDA21;
+  font-weight: 700;
+
+  &.new-posts,
+  &.unread-posts {
+    background-color: #acc2d7;
+  }
 }
 
 .tag-drop-header {
@@ -2068,23 +2083,10 @@ p {
   text-align: left !important;
 }
 
-.badge-notification {
-  color: #333;
-  background-color: #FFDA21;
-  font-weight: 700;
-}
-
-.d-header-icons .unread-notifications {
-  width: 12px;
-  height: 12px;
-  padding: 1px;
-  background-color: #FFDA21;
-}
-
-
-/* Time Range Dropdown
+/**********************************
+Time Range Dropdown
 ( Appears when sorting by 'top' )
- */
+ *******************************************/
 .period-chooser-header, .period-chooser-header h2 {
   padding-left: 0 !important;
   margin-left: 0;
@@ -2140,22 +2142,26 @@ p {
   width: 100%;
 }
 
-.timeline-container .topic-timeline .timeline-handle {
-  background-color: $secondary-color;
-}
+.timeline-container {
+  .topic-timeline {
+    .timeline-handle {
+      background-color: $secondary-color;
+    }
 
-.timeline-container .topic-timeline .timeline-scrollarea {
-  border-color: $secondary-color;
+    .timeline-scrollarea {
+      border-color: $secondary-color;
+    }
+  }
 }
 
 .delete-account {
   display: none;
 }
 
-
 // changes 1/25/19
-.topic-count{
-  display:none;
+// Topic Count appears in the category chooser drop-down and shows number of unread posts in that category
+.topic-count {
+  display: none;
 }
 
 .fa.d-icon.d-icon-lock.svg-icon.svg-string{
@@ -2163,11 +2169,11 @@ p {
 }
 
 .badge-wrapper .badge-category .category-name{
-  color: $white;
+  //color: $white;
 }
 
 .category-drop-header .category-name {
-  color: $white;
+  //color: $white;
 }
 
 ul.select-kit-collection .category-status .category-name {
@@ -2175,5 +2181,5 @@ ul.select-kit-collection .category-status .category-name {
 }
 
 .category-drop .category-name {
-  color: $white;
+  //color: $white;
 }
