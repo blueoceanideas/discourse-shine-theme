@@ -374,7 +374,7 @@ $gray-dark: #{$gray-dark};
 $gray-darker: #{$gray-darker};
 
 // Primary Colors
-$primary-tint: #{$primary-tint}; 
+$primary-tint: #{$primary-tint};
 $primary-color: #{$primary-color};
 $primary-shade: #{$primary-shade};
 
@@ -688,10 +688,10 @@ a:hover {
     background-size: contain;
   }
 
-/****************************
-* Featured Groups
-* (part of laruta header)
- **************************/
+  /****************************
+  * Featured Groups
+  * (part of laruta header)
+   **************************/
   #featuredGroups {
     display: none;
   }
@@ -2191,4 +2191,33 @@ ul.select-kit-collection .category-status .category-name {
 // Hide the all categories link in the category dropdown
 li[data-value="all-categories"] {
   display: none !important;
+}
+
+
+.blurred{
+  filter:blur(3px);
+}
+
+#page-not-found-modal {
+  background: white;
+  position: fixed;
+  width: 450px;
+  z-index: 1;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  color: #333333;
+  border-radius: 11px;
+}
+
+.page-not-found-modal-container{
+  width:100vh;
+  height:100vh;
+  display:none;
+  position:fixed;
+  top:0;
+  bottom:0;
+  z-index:1;
+  background-color: rgba(0,0,0, .75);
 }

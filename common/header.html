@@ -1,6 +1,22 @@
 <script>
+document.addEventListener('DOMContentLoaded', () => {
+  var pageNotFoundElem = document.querySelector('h1.page-not-found');
+  if ( pageNotFoundElem ) {
+    console.log("is 404, render modal");
+    var page = document.querySelector("section#main");
+    var footer = document.querySelector("footer.laruta-footer");
+    var pageNotFoundModal = document.querySelector(".page-not-found-modal-container");
+
+    page.classList.add("blurred");
+    footer.classList.add("blurred");
+    pageNotFoundModal.setAttribute("style", "display: flex;")
+
+  } else {
+    console.log("not a 404 page");
     I18n.translations.en.js.topic.create = "Create New Topic";
     I18n.translations.en.js.topic.all_topics_header = "All Topics in %{category} Community";
+  }
+});
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/before-topic-list-body/all-category-header">
@@ -11,7 +27,6 @@
 </script>
 
 <script type="text/x-handlebars" data-template-name="/connectors/above-site-header/laruta-super-nav">
-
     <div class="super-nav">
     	<div>
     		<ul class="links">
