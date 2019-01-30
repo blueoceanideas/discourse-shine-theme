@@ -2258,6 +2258,12 @@ li[data-value="all-categories"] {
     }
 
     .accordion {
+      padding:1rem 0;
+
+      & + .accordion {
+        border-bottom: solid 2px #adadad;
+      }
+
       label {
         margin: 0;
         padding: 0;
