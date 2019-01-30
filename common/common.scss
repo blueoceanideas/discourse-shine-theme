@@ -2193,11 +2193,17 @@ li[data-value="all-categories"] {
   display: none !important;
 }
 
+/***************************************
+* 404 - Page Not Found
+* Modal
+****************************************/
 
+// Attached w/ javascript to blur elements behind modal
 .blurred{
   filter:blur(3px);
 }
 
+// The Modal
 #page-not-found-modal {
   background: white;
   position: fixed;
@@ -2209,10 +2215,65 @@ li[data-value="all-categories"] {
   padding: 2em;
   color: #333333;
   border-radius: 11px;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: blue;
+    padding: 2rem;
+
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .bg-light-blue.full-width.blue-text {
+    background-color: lightblue;
+    margin: 0;
+    padding: 1rem;
+
+  }
+
+  .grey-border.border-tb {
+    /*! border-top: solid 2px darkgray; */
+    /*! border-bottom: solid 2px darkgray; */
+  }
+
+  #accordions {
+    padding: 2rem;
+  }
+
+  h2{
+    line-height:normal;
+    font-size:22px;
+    color:#28509f !important;
+    background:transparent;
+    display:block;
+    width:100%;
+    max-width:100%;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    text-align:left;
+    font-weight:700;
+    text-decoration:none !important;
+    padding:15px 0;
+    white-space:inherit;
+  }
+  p{
+    line-height:25px;
+    font-size:18px;
+    color:#4f4f4f;
+    margin-bottom:45px;
+  }
+  .accordion.grey-border.border-b{
+    border-bottom:solid 2px gray;
+  }
 }
 
+// Container wrapping around modal
 .page-not-found-modal-container{
-  width:100vh;
+  width: 100%;
   height:100vh;
   display:none;
   position:fixed;
