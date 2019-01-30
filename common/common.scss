@@ -2207,9 +2207,9 @@ li[data-value="all-categories"] {
 #page-not-found-modal {
   background: white;
   position: fixed;
-  width: 450px;
+  width: 500px;
   z-index: 1;
-  top: 20%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #333333;
@@ -2224,12 +2224,15 @@ li[data-value="all-categories"] {
     padding: 2rem;
 
     h1 {
+      font-size: 36px;
+      line-height: 40px;
       text-align: center;
     }
   }
 
   .bg-light-blue.full-width.blue-text {
-    background-color: $secondary-tint;
+    background-color: $breakout-tint;
+    color: $secondary-color;
     margin: 0;
     padding: 1rem;
     text-transform: uppercase;
@@ -2240,8 +2243,8 @@ li[data-value="all-categories"] {
   }
 
   .grey-border.border-tb {
-    border-top: solid 2px $gray-dark;
-    border-bottom: solid 2px $gray-dark;
+    border-top: solid 2px $gray-light;
+    border-bottom: solid 2px $gray-light;
   }
 
   #accordions {
