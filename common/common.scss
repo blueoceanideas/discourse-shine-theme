@@ -2209,7 +2209,7 @@ li[data-value="all-categories"] {
   position: fixed;
   width: 500px;
   z-index: 1;
-  top: 30%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #333333;
@@ -2253,9 +2253,16 @@ li[data-value="all-categories"] {
     .tab-content {
       max-height: 0;
       overflow: hidden;
+      transition: max-height .5s;
+      margin: 0;
     }
 
     .accordion {
+      label {
+        margin: 0;
+        padding: 0;
+      }
+
       input {
         display: none;
       }
@@ -2279,13 +2286,15 @@ li[data-value="all-categories"] {
     text-align:  left;
     font-weight: 700;
     text-decoration: none !important;
-    padding: 5px 0;
+    padding: 0;
     white-space:inherit;
   }
   p{
     line-height: 25px;
     font-size: 18px;
     color: $gray-dark;
+    margin: 0;
+    padding: 0;
   }
   .accordion.grey-border.border-b{
     border-bottom:solid 2px $gray-light;
