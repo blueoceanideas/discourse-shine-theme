@@ -40,9 +40,25 @@ primary-font: sans-serif
 secondary-font: sans-serif
 tertiary-font: sans-serif
 
+# Connect Background color
+background-gradient-color: '#fffac8'
+
+# Add link to a external font for importing
+font-source: false
+
 #Site Info
 site-full-name: 'Maryland State Bar Association'
 site-abbreviation: 'MSBA'
-laruta-landing-url: '/connect'
-laruta-how-to-use-url: '/how-to-use-connect'
+site-url: 'https://www.msba.org'
+laruta-environment:
+  default: demo
+  type: enum
+  choices:
+    - local
+    - staging
+    - demo
+    - production
+laruta-landing-url: 'connect'
+laruta-how-to-use-url: 'how-to-use-connect'
+
 
