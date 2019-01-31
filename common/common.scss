@@ -443,11 +443,11 @@ $bg-color-2: #{$bg-color-2};
 
 
 body {
-  font-family: proxima-nova;
+  font-family: #{$font-name};
   font-size: 15px;
 }
 
-$primary-font:  proxima-nova;
+$primary-font:  #{$font-name};
 $secondary-font: 'sans-serif';
 $tertiary-font: 'sans-serif';
 
@@ -1815,7 +1815,7 @@ ol.category-breadcrumb {
 .menu-panel {
   border: 0;
   box-shadow: 0 1px 3px black !important;
-  background-color: #31509a;
+  background-color: $secondary-color;
   color: white;
   font-size: 16px;
   padding: 30px 15px;

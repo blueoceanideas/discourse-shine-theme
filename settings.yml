@@ -45,6 +45,7 @@ background-gradient-color: '#fffac8'
 
 # Add link to a external font for importing
 font-source: 'https://use.typekit.net/qdb6iwq.css'
+font-name: 'proxima-nova'
 
 #Site Info
 site-full-name: 'Maryland State Bar Association'
