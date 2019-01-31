@@ -2,7 +2,7 @@
 * Import Source Sans Pro from Google Fonts
  */
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600,600i');
-@import url("https://use.typekit.net/qdb6iwq.css");
+@import url(#{$font-source});
 
 
 
@@ -1612,7 +1612,7 @@ body.navigation-categories {
  ************************************/
 body {
   background: rgb(255,250,200);
-  background: linear-gradient(180deg, #fffac8 0%, rgba(248,248,248,0) 20%);
+  background: linear-gradient(180deg, #{$background-gradient-color} 0%, rgba(248,248,248,0) 20%);
   min-width: 320px;
   overflow-x: hidden;
   overflow-y: auto;
