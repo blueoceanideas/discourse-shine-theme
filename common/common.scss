@@ -1828,10 +1828,14 @@ ol.category-breadcrumb {
   }
 
   span.badge-category {
-    //color: $white !important;
+    color: $white !important;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+
+    svg {
+      color: $white !important;
+    }
   }
 
   li a:hover,
@@ -1873,7 +1877,7 @@ ol.category-breadcrumb {
 }
 
 .menu-container-general-links {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 17px;
   border-bottom: solid 1px white;
   margin: 0 17px 15px;
