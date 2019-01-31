@@ -33,9 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     		</ul>
     		<ul class="user-nav">
     			<li class="login" id="renewWrapper">
-    				<a href="https://www.msba.org">
+    				<a href="{{theme-setting 'site-url'}}">
     				    <span class="icon-corner-up-left"></span>
-                        <span>Back to MSBA.org</span>
+                        <span>Back to {{theme-setting 'site-abbreviation'}}.org</span>
     				</a>
     			</li>
             </ul>
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Queue up code to run after Ember does its rendering of DOM things
 Ember.run.schedule('afterRender', () => {
-
-    const larutaPages     = [ 'connect', 'how-to-use-connect' ];
+    console.log(settings);
+    const larutaPages     = [ settings.laruta_landing_url, settings.laruta_how_to_use_url ];
     const siteLogoLink    = document.querySelector(".d-header .title a");
     const menuPanelParent = document.querySelector(".panel.clearfix");
 
@@ -154,10 +154,3 @@ Ember.run.schedule('afterRender', () => {
     }
 } );
 </script>
-
-<div class="mobile-connect-super-nav super-nav">
-    <a href="https://msba.org">
-        <span class="icon-corner-up-left"></span>
-        <span>Back to MSBA.org</span>
-    </a>
-</div>
