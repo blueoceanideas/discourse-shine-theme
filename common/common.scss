@@ -2205,8 +2205,15 @@ li[data-value="all-categories"] {
   .category-breadcrumb {
     .category-drop {
       .category-drop-header {
+        background-color: unset !important;
+        border-color: #a7a7a7;
         .category-name {
-          color: $white;
+          //color: $white;
+        }
+
+        .caret-icon {
+          background-color: unset !important;
+          border: 0 !important;
         }
       }
     }
