@@ -44,7 +44,7 @@ tertiary-font: sans-serif
 background-gradient-color: '#fffac8'
 
 # Add link to a external font for importing
-font-source: false
+font-source: 'https://use.typekit.net/qdb6iwq.css'
 
 #Site Info
 site-full-name: 'Maryland State Bar Association'
