@@ -39,3 +39,10 @@ bg-color-2: '#f1f5fa'
 primary-font: sans-serif
 secondary-font: sans-serif
 tertiary-font: sans-serif
+
+#Site Info
+site-full-name: 'Maryland State Bar Association'
+site-abbreviation: 'MSBA'
+laruta-landing-url: '/connect'
+laruta-how-to-use-url: '/how-to-use-connect'
+
