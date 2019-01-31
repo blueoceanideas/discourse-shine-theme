@@ -402,6 +402,7 @@ table.categoryStats td {
   }
 
   h1 {
+    display: flex;
     float: left;
     margin-top: 5px !important;
     margin-right: 0.5rem !important;
@@ -799,5 +800,5 @@ ol.category-breadcrumb {
 }
 
 .topic-category > a:first-of-type {
-  max-width: 20%;
+  //max-width: 20%;
 }
