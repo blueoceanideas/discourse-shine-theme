@@ -1119,7 +1119,7 @@ body.navigation-categories {
     padding-bottom: 10px;
 
     .topic-statuses {
-      //display: flex;
+      display: flex;
       //margin-bottom: 15px;
     }
 
@@ -1128,7 +1128,6 @@ body.navigation-categories {
       width: 100%;
       font-size: 28px;
       display: block;
-      border-bottom: solid 1px $gray-lighter;
       margin-bottom: 0;
     }
 
