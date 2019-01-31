@@ -493,32 +493,30 @@ a:hover {
  **************************/
 .super-nav {
   // Default + Mobile Styles
-  display: none;
+  //display: none;
 
-  @media (min-width: 768px) {
-    background-color: $gray-darker;
-    display: block;
+  background-color: $gray-darker;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  > div {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
     margin: 0;
-    padding: 0;
-    width: 100%;
 
-    > div {
-      display: flex;
-      justify-content: space-between;
-      max-width: 1280px;
-      margin: 0 auto;
-    }
+    li {
+      padding-bottom: 6px;
+      padding-top: 6px;
 
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-
-      li {
-        padding-bottom: 6px;
-        padding-top: 6px;
-
-      }
     }
   }
 
