@@ -2201,6 +2201,18 @@ li[data-value="all-categories"] {
   display: none !important;
 }
 
+.category-navigation {
+  .category-breadcrumb {
+    .category-drop {
+      .category-drop-header {
+        .category-name {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
 /***************************************
 * 404 - Page Not Found
 * Modal
