@@ -2233,6 +2233,9 @@ li[data-value="all-categories"] {
 // The Modal
 #page-not-found-modal {
   background: white;
+  background-image: url($modal-bg);
+  background-position: top center;
+  background-repeat: no-repeat;
   position: fixed;
   width: 500px;
   z-index: 1;
@@ -2241,6 +2244,7 @@ li[data-value="all-categories"] {
   transform: translate(-50%, -50%);
   color: #333333;
   border-radius: 11px;
+  padding-top: 100px;
   overflow: hidden;
 
   .header {
