@@ -734,22 +734,31 @@ a:hover {
 * ( taken from MSBA footer )
  **************************/
 .laruta-footer {
-  background-color: #262626;
+  background-color: $gray-darker;
   color: $gray-light;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
   @media (min-width: 768px) {
-    padding: 5rem 0;
+    padding: 1.5rem 0 3rem;
   }
 
-  @media (min-width: 992px) {
-    padding: 8rem 0;
+  nav{
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    a{
+      text-transform: uppercase;
+      color: $gray-lighter;
+      padding: 5px;
+
+      &:hover {
+        color: $gray-lighter;
+        text-decoration: underline;
+      }
+    }
   }
 
   .container {
-    border-bottom: .8rem solid #3D3D3D;
-    padding-bottom: 30px;
+    border-bottom: .8rem solid $gray-dark;
 
     .logo {
       margin-bottom: 30px;
@@ -792,7 +801,7 @@ a:hover {
 
             color: $gray-light;
 
-            font-family: 'ProximaNova';
+            font-family: $primary-font;
             font-size: 13px;
             line-height: normal;
             font-style: normal;
@@ -830,7 +839,7 @@ a:hover {
       display: inline-block;
 
       color: $gray-light;
-      font-family: 'ProximaNova';
+      font-family: $primary-font;
       font-size: 13px;
       font-weight: 600;
 
@@ -913,7 +922,7 @@ a:hover {
 
             &:hover {
               span {
-                background-color: white;
+                background-color: $white;
               }
             }
           }
@@ -951,7 +960,7 @@ a:hover {
 
   header {
     h3 {
-      color: #28509F;
+      color: $secondary-color;
       font-size: 22px;
     }
   }

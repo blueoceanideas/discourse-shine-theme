@@ -1,4 +1,5 @@
 <script>
+// NON EMBER SCRIPTS ARE HERE
 document.addEventListener('DOMContentLoaded', () => {
   var pageNotFoundElem = document.querySelector('h1.page-not-found');
   if ( pageNotFoundElem ) {
@@ -6,10 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
     var page = document.querySelector("section#main");
     var footer = document.querySelector("footer.laruta-footer");
     var pageNotFoundModal = document.querySelector(".page-not-found-modal-container");
+    var siteAbbr = extractHostname(window.location.toString());
 
     page.classList.add("blurred");
     footer.classList.add("blurred");
     pageNotFoundModal.setAttribute("style", "display: flex;")
+
 
   } else {
     console.log("not a 404 page");
@@ -152,5 +155,83 @@ Ember.run.schedule('afterRender', () => {
         window.location.replace( 'https://msba.demo.laruta.io/' + pageUrl );
       }
     }
+
+    function extractHostname(url) {
+        var hostname;
+        //find & remove protocol (http, ftp, etc.) and get hostname
+
+        if (url.indexOf("//") > -1) {
+            hostname = url.split('/')[2];
+        }
+        else {
+            hostname = url.split('/')[0];
+        }
+
+        //find & remove port number
+        hostname = hostname.split(':')[0];
+        //find & remove "?"
+        hostname = hostname.split('?')[0];
+
+        hostname = hostname.split('.')[1];
+
+        return hostname;
+    }
 } );
+</script>
+
+<!-- Laruta Footer -->
+<script type="text/x-handlebars" data-template-name="/connectors/below-footer/laruta-connect-footer">
+    <link rel="stylesheet" href="https://s3.amazonaws.com/icomoon.io/119805/Laruta/style.css?95jsbu">
+    <footer class="laruta-footer bootstrap {{theme-setting 'site-abbreviation'}}-bootstrap content-info d-print-none">
+
+
+        <div class="container">
+            <div class="col-12">
+                <nav class="d-flex flex-column flex-md-row flex-md-wrap justify-content-around align-items-start align-items-md-center border-bottom">
+                    <a href="{{theme-setting 'site-url'}}" class="footer-link"><span class="icon-corner-up-left"></span>Back to {{theme-setting 'site-abbreviation'}}.org</a>
+                    <a href="{{theme-setting 'site-url'}}/{{theme-setting 'laruta-how-to-use-url'}}" class="footer-link">How to use Connect</a>
+                    <a href="{{theme-setting 'site-url'}}/{{theme-setting 'laruta-landing-url'}}" class="footer-link">My Communities</a>
+                    <a href="" class="footer-link">Connect Settings</a>
+                </nav>
+            </div>
+
+
+            <div class="row align-items-start align-items-md-center">
+                <div class="col-12 col-md-4">
+                    <div class="logo">
+                        <a href="{{theme-setting 'site-url'}}">
+                            <img class="img-fluid" src="{{theme-setting 'laruta-site-logo'}}" srcset="{{theme-setting 'laruta-site-logo'}} 2x">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="logo">
+                      <a href="{{theme-setting 'site-url'}}/{{theme-setting 'laruta-landing-url'}}">
+                          <img class="img-fluid" src="{{siteSettings.logo}}">
+                      </a>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-center">
+                    <address>
+                        <strong>{{theme-setting 'site-full-name'}}</strong>
+                        <span>{{theme-setting 'site-address-1'}}, {{theme-setting 'site-address-2'}}</span>
+                        <span>{{theme-setting 'site-city'}}, {{theme-setting 'site-state'}}, {{theme-setting 'site-zip'}}</span>
+                        <span> <a class="phone-link" href="tel:{{theme-setting 'site-phone-1'}}" target="_blank">{{theme-setting 'site-phone-1'}}</a> <a class="phone-link" href="tel:{{theme-setting 'site-phone-2'}}" target="_blank">{{theme-setting 'site-phone-2'}}</a></span>
+                    </address>
+                </div>
+            </div>
+
+            <div class="container-fluid" id="footerLegalLinks">
+                <div class="row">
+                    <div class="col-12">
+                       <nav class="d-flex flex-column flex-md-row flex-md-wrap justify-content-around align-items-start align-items-md-center border-top">
+                           <a class="nav-link" href="{{theme-setting 'laruta-copyright-url'}}">Copyright</a>
+                           <a class="nav-link" href="{{theme-setting 'laruta-privacy-policy-url'}}">Privacy Policy</a>
+                       </nav>
+                    </div>
+                </div>
+            </div>
+        </div> <!--.row-->
+    </footer>
+
 </script>

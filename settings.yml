@@ -51,6 +51,13 @@ font-name: 'proxima-nova'
 site-full-name: 'Maryland State Bar Association'
 site-abbreviation: 'MSBA'
 site-url: 'https://www.msba.org'
+site-address-1: 'Street Address'
+site-address-2: 'Apt or Unit #'
+site-city: 'City or Town'
+site-state: 'State'
+site-zip: 'Zipcode'
+site-phone-1: ''
+site-phone-2: ''
 laruta-environment:
   default: demo
   type: enum
@@ -61,5 +68,8 @@ laruta-environment:
     - production
 laruta-landing-url: 'connect'
 laruta-how-to-use-url: 'how-to-use-connect'
+laruta-copyright-url: '/copyright'
+laruta-privacy-policy-url: '/privacy-policy'
+laruta-site-logo: 'https://www.msba.org/content/uploads/sites/7/2018/04/MSBA-2X-Brand-Logo-Dark-Background1.png'
 
 
