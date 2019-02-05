@@ -1,64 +1,64 @@
 # Blacks / Whites / Grays
 black: '#000000'
 white: '#ffffff'
-gray-lighter: '#e9e9e9'
-gray-light: '#adadad'
-gray-dark: '#4f4f4f'
+gray_lighter: '#e9e9e9'
+gray_light: '#adadad'
+gray_dark: '#4f4f4f'
 gray-darker: '#2a2a2a'
 
 #Primary Colors
-primary-color: '#5b2e8b'
-primary-tint: '#e7dbf3'
-primary-shade: '#401363'
+primary_color: '#5b2e8b'
+primary_tint: '#e7dbf3'
+primary_shade: '#401363'
 
 # Secondary Colors
-secondary-color: '#235b9c'
-secondary-tint: '#dde9f6'
-secondary-shade: '#0b1257'
+secondary_color: '#235b9c'
+secondary_tint: '#dde9f6'
+secondary_shade: '#0b1257'
 
 # Neutral Colors
-neutral-color: '#0c889f'
-neutral-tint: '#cceaef'
-neutral-shade: '#005d6f'
+neutral_color: '#0c889f'
+neutral_tint: '#cceaef'
+neutral_shade: '#005d6f'
 
 # Breakout Colors
-breakout-color: '#119b4b'
-breakout-tint: '#c8e7d5'
-breakout-shade: '#005323'
+breakout_color: '#119b4b'
+breakout_tint: '#c8e7d5'
+breakout_shade: '#005323'
 
 # Accent Colors
-accent-color: '#ce694b'
-accent-tint: '#ead5ce'
-accent-shade: '#a43513'
+accent_color: '#ce694b'
+accent_tint: '#ead5ce'
+accent_shade: '#a43513'
 
 # Background Colors
-bg-color-1: '#fdf8f8'
-bg-color-2: '#f1f5fa'
+bg_color_1: '#fdf8f8'
+bg_color_2: '#f1f5fa'
 
 #Fonts
-primary-font: sans-serif
-secondary-font: sans-serif
-tertiary-font: sans-serif
+primary_font: sans-serif
+secondary_font: sans-serif
+tertiary_font: sans-serif
 
 # Connect Background color
-background-gradient-color: '#fffac8'
+background_gradient_color: '#fffac8'
 
 # Add link to a external font for importing
-font-source: 'https://use.typekit.net/qdb6iwq.css'
-font-name: 'proxima-nova'
+font_source: 'https://use.typekit.net/qdb6iwq.css'
+font_name: 'proxima-nova'
 
 #Site Info
-site-full-name: 'Maryland State Bar Association'
-site-abbreviation: 'MSBA'
-site-url: 'https://www.msba.org'
-site-address-1: 'Street Address'
-site-address-2: 'Apt or Unit #'
-site-city: 'City or Town'
-site-state: 'State'
-site-zip: 'Zipcode'
-site-phone-1: ''
-site-phone-2: ''
-laruta-environment:
+site_full_name: 'Maryland State Bar Association'
+site_abbreviation: 'MSBA'
+site_url: 'https://www.msba.org'
+site_address_1: 'Street Address'
+site_address_2: 'Apt or Unit #'
+site_city: 'City or Town'
+site_state: 'State'
+site_zip: 'Zipcode'
+site_phone_1: ''
+site_phone_2: ''
+laruta_environment:
   default: demo
   type: enum
   choices:
@@ -66,10 +66,10 @@ laruta-environment:
     - staging
     - demo
     - production
-laruta-landing-url: 'connect'
-laruta-how-to-use-url: 'how-to-use-connect'
-laruta-copyright-url: '/copyright'
-laruta-privacy-policy-url: '/privacy-policy'
-laruta-site-logo: 'https://www.msba.org/content/uploads/sites/7/2018/04/MSBA-2X-Brand-Logo-Dark-Background1.png'
+laruta_landing_url: 'connect'
+laruta_how_to_use_url: 'how-to-use-connect'
+laruta_copyright_url: '/copyright'
+laruta_privacy_policy_url: '/privacy-policy'
+laruta_site_logo: 'https://www.msba.org/content/uploads/sites/7/2018/04/MSBA-2X-Brand-Logo-Dark-Background1.png'
 
 
