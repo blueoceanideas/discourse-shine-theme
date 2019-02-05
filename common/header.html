@@ -58,7 +58,7 @@ Ember.run.schedule('afterRender', () => {
     // Redirect Logo Link in Header to the Landing Page
     siteLogoLink.addEventListener("click", (event) => {
         event.preventDefault();
-        redirectToLarutaPage( 'connect' );
+        redirectToLarutaPage( settings.laruta_landing_url );
     });
 
     // api.onPageChange is the closest thing to a "page refresh"
@@ -152,7 +152,7 @@ Ember.run.schedule('afterRender', () => {
 
     function redirectToLarutaPage( pageUrl ){
       if( larutaPages.includes( pageUrl ) ){
-        window.location.replace( 'https://msba.demo.laruta.io/' + pageUrl );
+        window.location.replace( 'https://'+settings.site_abbreviation+'.demo.laruta.io/' + pageUrl );
       }
     }
 
