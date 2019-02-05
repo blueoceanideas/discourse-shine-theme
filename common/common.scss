@@ -2358,3 +2358,11 @@ li[data-value="all-categories"] {
   z-index:1;
   background-color: rgba(0,0,0, .75);
 }
+
+// Featured Category Logos
+.category-logo.aspect-image img {
+  width: unset;
+  height: inherit;
+  max-width: initial;
+  max-height: initial;
+}
