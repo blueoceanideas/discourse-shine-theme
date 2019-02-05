@@ -1402,7 +1402,7 @@ body.navigation-categories {
  **************************/
 .title-wrapper {
   width: 94% !important;
-  padding: 0 3% 30px !important;
+  padding: 10px 3% 15px !important;
 
   h1 {
     border-bottom: solid 1px $gray-dark;
@@ -1695,6 +1695,7 @@ body {
 }
 
 .d-header {
+  height: 5em !important;
   margin-bottom: 0 !important;
 
   #site-logo {
