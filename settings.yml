@@ -50,6 +50,7 @@ font_name: 'proxima-nova'
 #Site Info
 site_full_name: 'Maryland State Bar Association'
 site_abbreviation: 'MSBA'
+site_abbreviation_lower: 'msba'
 site_url: 'https://www.msba.org'
 site_address_1: 'Street Address'
 site_address_2: 'Apt or Unit #'
@@ -62,10 +63,10 @@ laruta_environment:
   default: demo
   type: enum
   choices:
-    - local
-    - staging
-    - demo
-    - production
+    - 'localhost:9292'
+    - '.laruta.io'
+    - '.demo.laruta.io'
+    - '.org'
 laruta_landing_url: 'connect'
 laruta_how_to_use_url: 'how-to-use-connect'
 laruta_copyright_url: '/copyright'
