@@ -60,7 +60,7 @@ site_zip: 'Zipcode'
 site_phone_1: ''
 site_phone_2: ''
 laruta_environment:
-  default: demo
+  default: '.demo.laruta.io'
   type: enum
   choices:
     - 'localhost:9292'
