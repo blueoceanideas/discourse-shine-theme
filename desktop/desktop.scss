@@ -58,6 +58,7 @@ html {
 
 .d-header {
   #site-logo {
+    max-width: unset !important;
     max-height: 32px;
     position: relative;
     top: 6px;
