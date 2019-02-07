@@ -429,7 +429,53 @@ h3 a {
 }
 
 // laruta
+/*********************************
+* Laruta
+******************************************/
 
+// Atoms / Colors
+// Source: Figma Style Guide
+// Contains the color palette, classes, mixins and variables for the site colors.
+
+// For Discourse/Connect:
+// Variables defined in settings.yml
+
+// Black + White + Grayscales
+$black: #{$black};
+$white: #{$white};
+$gray-lighter: #{$gray-lighter};
+$gray-light: #{$gray-light};
+$gray-dark: #{$gray-dark};
+$gray-darker: #{$gray-darker};
+
+// Primary Colors
+$primary-tint: #{$primary-tint};
+$primary-color: #{$primary-color};
+$primary-shade: #{$primary-shade};
+
+// Secondary Colors
+$secondary-tint: #{$secondary-tint};
+$secondary-color: #{$secondary-color};
+$secondary-shade: #{$secondary-shade};
+
+// Neutral Colors
+$neutral-tint: #{$neutral-tint};
+$neutral-color: #{$neutral-color};
+$neutral-shade: #{$neutral-shade};
+
+// Breakout Colors
+$breakout-tint: #{$breakout-tint};
+$breakout-color: #{$breakout-color};
+$breakout-shade: #{$breakout-shade};
+
+// Accent Colors
+$accent-tint: #{$accent-tint};
+$accent-color: #{$accent-color};
+$accent-shade: #{$accent-shade};
+
+// Background Colors
+$bg-color-1: #{$bg-color-1};
+$bg-color-2: #{$bg-color-2};
 /****************************
 * Create Topic Button
 * (also the Open Draft Button)
@@ -437,11 +483,11 @@ h3 a {
 #create-topic {
   align-self: stretch;
   align-items: center;
-  background-color: #28509F !important;
+  background-color: $secondary-color !important;
   border-radius: 0 !important;
-  border: solid 1px #545efc;
+  border: solid 1px $secondary-color;
   box-sizing: border-box;
-  color: white !important;
+  color: $white !important;
   display: flex;
   justify-content: center;
   margin: 0 3px 10px 3px;
@@ -574,4 +620,28 @@ ol.category-breadcrumb {
 
 .category-header #main-outlet {
   padding-top: 0 !important;
+}
+
+.header-dropdown-toggle a:hover {
+
+  background-color: transparent !important;
+
+}
+.unread-private-messages:hover {
+
+  background-color: $accent-shade !important;
+
+}
+.d-header-icons .badge-notification {
+
+  min-width: unset;
+  width: 12px;
+  height: 12px;
+  padding: 5px;
+
+}
+
+.d-header-icons .unread-private-messages, .d-header-icons .ring {
+  left: -25px;
+  right: 25px;
 }
