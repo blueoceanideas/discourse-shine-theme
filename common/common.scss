@@ -116,6 +116,8 @@ body button,
 body select,
 body textarea {
   font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /*
@@ -962,6 +964,9 @@ a:hover {
 
   .badge-notification {
     min-width: unset;
+    width: 12px;
+    height: 12px;
+    padding: 5px;
   }
 }
 
@@ -1766,7 +1771,7 @@ ol.category-breadcrumb {
 .badge-notification {
   color: $white;
   background-color: $accent-color;
-  font-weight: 700;
+  font-weight: 400;
 
   &.new-posts,
   &.unread-posts {
