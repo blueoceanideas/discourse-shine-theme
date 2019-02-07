@@ -48,6 +48,55 @@ $base-background: $white;
 $base-font-color: $blue-dark;
 $base-error-color: $pink;
 
+/*********************************
+* Laruta
+******************************************/
+
+// Atoms / Colors
+// Source: Figma Style Guide
+// Contains the color palette, classes, mixins and variables for the site colors.
+
+// For Discourse/Connect:
+// Variables defined in settings.yml
+
+// Black + White + Grayscales
+$black: #{$black};
+$white: #{$white};
+$gray-lighter: #{$gray-lighter};
+$gray-light: #{$gray-light};
+$gray-dark: #{$gray-dark};
+$gray-darker: #{$gray-darker};
+
+// Primary Colors
+$primary-tint: #{$primary-tint};
+$primary-color: #{$primary-color};
+$primary-shade: #{$primary-shade};
+
+// Secondary Colors
+$secondary-tint: #{$secondary-tint};
+$secondary-color: #{$secondary-color};
+$secondary-shade: #{$secondary-shade};
+
+// Neutral Colors
+$neutral-tint: #{$neutral-tint};
+$neutral-color: #{$neutral-color};
+$neutral-shade: #{$neutral-shade};
+
+// Breakout Colors
+$breakout-tint: #{$breakout-tint};
+$breakout-color: #{$breakout-color};
+$breakout-shade: #{$breakout-shade};
+
+// Accent Colors
+$accent-tint: #{$accent-tint};
+$accent-color: #{$accent-color};
+$accent-shade: #{$accent-shade};
+
+// Background Colors
+$bg-color-1: #{$bg-color-1};
+$bg-color-2: #{$bg-color-2};
+
+
 .cooked,
 .d-editor-preview,
 body,
@@ -71,7 +120,7 @@ html {
   font-size: 16px;
   line-height: 1.5em;
   background: none;
-  color: $text-lighter;
+  color: $gray-lighter;
 
   a {
     color: inherit;
@@ -94,21 +143,21 @@ ol.category-breadcrumb {
   > li > a {
     &:hover {
       background-color: $purple-fade;
-      color: $purple !important;
+      color: $primary-color !important;
     }
   }
 
   > li > a.active,
   li.active > a {
-    background-color: $purple-fade;
-    color: $purple;
+    background-color: $primary-tint;
+    color: $primary-color;
     font-weight: 500;
   }
 }
 
-.list-controls
-  .category-breadcrumb
-  a.badge-category.category-dropdown-button:hover
+.list-controls,
+  .category-breadcrumb,
+  a.badge-category.category-dropdown-button:hover,
   .fa-caret-right {
   color: $black;
 }
@@ -125,15 +174,15 @@ ol.category-breadcrumb {
   td,
   th {
     line-height: 1.43em;
-    color: $text-lighter;
+    color: $gray-lighter;
   }
 
   td .fa-check-square-o {
-    color: $green-xlight;
+    color: $breakout-tint;
   }
 
   th {
-    color: $text-lighter;
+    color: $gray-lighter;
 
     &:hover {
       font-weight: 400;
@@ -197,11 +246,11 @@ ol.category-breadcrumb {
   margin: 0 0 0 8px !important;
 
   &:hover {
-    background-color: transparent !important;
+    //background-color: transparent !important;
   }
 
   &.active i {
-    color: $purple;
+    color: $primary-color;
   }
 }
 
@@ -221,7 +270,7 @@ ol.category-breadcrumb {
 .btn-primary {
   &:focus,
   &:hover {
-    background-color: #28509F !important;
+    background-color: $primary-shade !important;
     color: $white;
   }
 }
@@ -236,7 +285,7 @@ ol.category-breadcrumb {
 
 .fa-ellipsis-h,
 .fa-pencil {
-  color: rgba($black, 0.5);
+  color: rgba(#000000, 0.5);
 
   &:focus,
   &:hover {
@@ -257,7 +306,7 @@ nav.post-controls {
   }
 
   .fa-check-square {
-    color: $green;
+    color: $breakout-color;
   }
 
   button i {
@@ -270,7 +319,7 @@ nav.post-controls {
 
   button.create.d-hover {
     color: $white;
-    background-color: $purple;
+    background-color: $primary-color;
   }
 
   button i.fa.fa-reply {
@@ -278,16 +327,16 @@ nav.post-controls {
   }
 
   button.has-like .fa-heart {
-    color: $pink;
+    color: $love;
 
     &:hover {
-      color: $pink-dark;
+      color: darken($love, .25);
     }
   }
 }
 
 .fa-heart:hover {
-  color: $pink-dark;
+  color: darken($love, .25);
 }
 
 .extra-info-wrapper {
@@ -300,7 +349,7 @@ nav.post-controls {
   }
 
   .badge-wrapper.bullet span.badge-category {
-    color: white !important;
+    color: $white !important;
   }
 }
 
@@ -338,7 +387,7 @@ nav.post-controls {
   }
 
   &:hover {
-    background: $purple;
+    background: $primary-color;
   }
 }
 
@@ -385,7 +434,7 @@ table.categoryStats td {
 #suggested-topics h3 a:hover,
 .topic-list-bottom h2 a:hover,
 .topic-list-bottom h3 a:hover {
-  color: $purple;
+  color: $primary-color;
 }
 
 .category a,
@@ -426,7 +475,7 @@ table.categoryStats td {
 }
 
 .btn-primary.widget-button {
-  color: white !important;
+  color: $white !important;
 }
 
 .category-description {
@@ -659,14 +708,14 @@ body {
 .category-boxes .category-box, .category-boxes-with-topics .category-box {
   text-align: left;
   border-left: 0 !important;
-  border-bottom: solid 1px lightgray !important;
+  border-bottom: solid 1px $gray-light !important;
   width: 30% !important;
   margin: 0;
   padding: 15px 0;
 }
 
 .category-boxes .category-box, .category-boxes-with-topics .category-box {
-  border-top: solid 3px #FFDA21 !important;
+  border-top: solid 3px $primary-color !important;
 }
 
 #allTopicsHeader {
@@ -716,6 +765,11 @@ body {
   text-align: right;
   display: flex;
   justify-content: flex-end;
+}
+
+button.create.d-hover {
+  color: $white;
+  background-color: $primary-color;
 }
 
 .btn {
