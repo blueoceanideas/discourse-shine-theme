@@ -959,6 +959,10 @@ a:hover {
     padding: 1px;
     background-color: $primary-color;
   }
+
+  .badge-notification {
+    min-width: unset;
+  }
 }
 
 
@@ -1857,7 +1861,7 @@ ol.category-breadcrumb {
 }
 
 .widget-link {
-  padding-left: 0 !important;
+  //padding-left: 0 !important;
 }
 
 .menu-container-faq-link,
