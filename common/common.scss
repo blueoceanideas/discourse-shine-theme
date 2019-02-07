@@ -988,16 +988,11 @@ a:hover {
 }
 
 .alert-info {
-  width: 90% !important;
-  margin-left: auto;
-  margin-right: auto;
-
-  &.clickable {
-    color: white;
-    background-color: $neutral-shade;
-    padding: 15px;
-    margin: 0 15px 30px;
-  }
+  color: $white !important;
+  background-color: $neutral-shade;
+  width: 96% !important;
+  padding: 2%;
+  margin: 0 0 10px;
 }
 
 .footer-message {
