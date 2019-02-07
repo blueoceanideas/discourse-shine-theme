@@ -19,7 +19,7 @@ secondary_shade: '#0b1257'
 # Neutral Colors
 neutral_color: '#0c889f'
 neutral_tint: '#cceaef'
-neutral_shade: '#005d6f'
+neutral_shade: '#0c889f'
 
 # Breakout Colors
 breakout_color: '#119b4b'
