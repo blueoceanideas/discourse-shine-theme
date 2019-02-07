@@ -2152,8 +2152,8 @@ Time Range Dropdown
 #reply-control.draft, #reply-control.saving {
   height: 40px !important;
   align-items: center;
-  background: #FFDA21;
-  color: #000;
+  background: $primary-color;
+  color: $white;
   flex-direction: row;
   width: 100%;
 }
