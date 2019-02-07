@@ -107,8 +107,8 @@ html {
 
 .d-header {
   #site-logo {
-    max-width: unset !important;
-    max-height: 32px;
+    max-width: 50% !important;
+    height: unset;
     position: relative;
     top: 6px;
   }
