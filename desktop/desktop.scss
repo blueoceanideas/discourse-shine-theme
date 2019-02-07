@@ -174,7 +174,7 @@ ol.category-breadcrumb {
   td,
   th {
     line-height: 1.43em;
-    color: $gray-lighter;
+    color: $gray-dark;
   }
 
   td .fa-check-square-o {
@@ -182,7 +182,7 @@ ol.category-breadcrumb {
   }
 
   th {
-    color: $gray-lighter;
+    color: $gray-dark;
 
     &:hover {
       font-weight: 400;
