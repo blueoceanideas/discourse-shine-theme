@@ -643,3 +643,7 @@ ol.category-breadcrumb {
   left: -25px;
   right: 25px;
 }
+
+[class*="archetype-"] #main-outlet {
+  overflow: visible;
+}
