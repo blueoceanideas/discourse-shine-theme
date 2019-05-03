@@ -102,7 +102,7 @@ Ember.run.schedule('afterRender', () => {
                 analytics._loadOptions = e
             };
             analytics.SNIPPET_VERSION = "4.1.0";
-            analytics.load("F0CBwG20k0H7n1ZmZxr2shNtX7FiRQOW");
+            analytics.load(settings.segment_key);
             analytics.page();
             analytics.identify(parseInt(Discourse.User.current().external_id), {
                 email: Discourse.User.current().email
