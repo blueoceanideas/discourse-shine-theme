@@ -149,9 +149,14 @@ ol.category-breadcrumb {
 
   > li > a.active,
   li.active > a {
-    background-color: $primary-tint;
-    color: $primary-color;
+    background-color: $primary-color;
+    color: $white;
     font-weight: 500;
+
+    &:hover {
+      background-color: $primary-shade;
+      color: $white !important;
+    }
   }
 }
 
