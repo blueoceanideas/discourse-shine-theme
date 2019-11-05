@@ -1973,6 +1973,10 @@ ol.category-breadcrumb {
       span {
         color: $accent-tint;
         font-weight: 600;
+
+        &:first-child {
+          color: $accent-color;
+        }
       }
     }
 
