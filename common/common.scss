@@ -2095,10 +2095,6 @@ ol.category-breadcrumb {
   padding: unset !important;
 }
 
-.mobile-view .mobile-nav {
-  width: 49%;
-}
-
 .top-section {
   p {
     text-align: left;
@@ -2236,9 +2232,6 @@ li[data-value="all-categories"] {
       .category-drop-header {
         background-color: unset !important;
         border-color: #a7a7a7;
-        .category-name {
-          //color: $white;
-        }
 
         .caret-icon {
           background-color: unset !important;
