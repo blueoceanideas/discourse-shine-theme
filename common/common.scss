@@ -2005,7 +2005,8 @@ ol.category-breadcrumb {
   .quick-access-panel {
     li,
     .read,
-    .show-all a {
+    .show-all a,
+    .show-all a:hover {
       background-color: unset;
     }
 
