@@ -2385,3 +2385,8 @@ li[data-value="all-categories"] {
 .open .grippie {
   background: $primary-color;
 }
+
+// Hide Recently Used Devices in User Preferences
+.pref-auth-tokens {
+  display: none;
+}
