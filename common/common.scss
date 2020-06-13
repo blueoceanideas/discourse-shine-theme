@@ -2390,3 +2390,9 @@ li[data-value="all-categories"] {
 .pref-auth-tokens {
   display: none;
 }
+
+// Hide About page admins and stats
+.staff .about.stats,
+.staff .about.admins {
+    display: none !important;
+}
