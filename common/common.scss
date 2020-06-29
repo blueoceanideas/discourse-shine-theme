@@ -1458,10 +1458,11 @@ body.navigation-categories {
   }
 
   .topic-meta-data {
-
-    .post-date:before {
-      color: $gray-light;
-      content: 'posted ';
+    .post-info {
+      .post-date:before {
+        content: 'posted ';
+        color: $gray-light;
+      }
     }
   }
 
