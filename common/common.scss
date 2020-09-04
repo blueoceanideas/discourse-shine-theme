@@ -1814,6 +1814,7 @@ ol.category-breadcrumb {
 }
 
 // menu
+
 .menu-panel {
   border: 0;
   box-shadow: 0 1px 3px black !important;
@@ -1836,6 +1837,13 @@ ol.category-breadcrumb {
     svg {
       color: $white !important;
     }
+  }
+
+  li a.widget-link,
+  li a.categories-link,
+  li.heading a.widget-link,
+  li.heading a.categories-link {
+    color: unset;
   }
 
   li a:hover,
