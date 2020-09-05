@@ -1842,7 +1842,8 @@ ol.category-breadcrumb {
   li a.widget-link,
   li a.categories-link,
   li.heading a.widget-link,
-  li.heading a.categories-link {
+  li.heading a.categories-link,
+  .quick-access-panel a {
     color: unset;
   }
 
