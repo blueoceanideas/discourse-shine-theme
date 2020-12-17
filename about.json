@@ -25,6 +25,18 @@
       "success": "4fb076",
       "love": "e38127"
     },
+    "BLI": {
+      "primary": "4f4f4f",
+      "secondary": "f1f5fa",
+      "tertiary": "396d90",
+      "quaternary": "4f4f4f",
+      "header_background": "f1f5fa",
+      "header_primary": "f1f5fa",
+      "highlight": "33bac4",
+      "danger": "913819",
+      "success": "4fb076",
+      "love": "e38127"
+    },
     "COCPA": {
       "primary": "4f4f4f",
       "secondary": "f1f5fa",
