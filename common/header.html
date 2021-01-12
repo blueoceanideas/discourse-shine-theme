@@ -208,7 +208,7 @@ Ember.run.schedule('afterRender', () => {
 
     function redirectToLarutaPage( pageUrl ){
       if( larutaPages.includes( pageUrl ) ){
-        window.location.replace( 'https://' + settings.site_abbreviation + settings.laruta_environment + '/' + pageUrl );
+        window.location.replace( 'https://' + settings.site_url + '/' + pageUrl );
       }
     }
 
@@ -245,8 +245,8 @@ Ember.run.schedule('afterRender', () => {
             <div class="col-12">
                 <nav class="d-flex flex-column flex-md-row flex-md-wrap justify-content-around align-items-start align-items-md-center border-bottom">
                     <a href="https://{{theme-setting 'site_url'}}" class="footer-link"><span class="icon-corner-up-left"></span>Back to {{theme-setting 'site_url'}}</a>
-                    <a href="https://{{theme-setting 'site_abbreviation_lower'}}{{theme-setting 'laruta_environment'}}/{{theme-setting 'laruta_how_to_use_url'}}" class="footer-link">How to use Connect</a>
-                    <a href="https://{{theme-setting 'site_abbreviation_lower'}}{{theme-setting 'laruta_environment'}}/{{theme-setting 'laruta_landing_url'}}" class="footer-link">My Communities</a>
+                    <a href="https://{{theme-setting 'site_url'}}/{{theme-setting 'laruta_how_to_use_url'}}" class="footer-link">How to use Connect</a>
+                    <a href="https://{{theme-setting 'site_url'}}/{{theme-setting 'laruta_landing_url'}}" class="footer-link">My Communities</a>
                 </nav>
             </div>
 
@@ -254,7 +254,7 @@ Ember.run.schedule('afterRender', () => {
             <div class="col-12 row py-3 pt-md-0 align-items-start align-items-md-center">
                 <div class="col-12 col-md-3">
                     <div class="logo">
-                        <a href="https://{{theme-setting 'site_abbreviation_lower'}}{{theme-setting 'laruta_environment'}}">
+                        <a href="https://{{theme-setting 'site_url'}}">
                             <img class="img-fluid" src="{{theme-setting 'laruta_site_logo'}}" srcset="{{theme-setting 'laruta_site_logo'}} 2x">
                         </a>
                     </div>
@@ -273,8 +273,8 @@ Ember.run.schedule('afterRender', () => {
                 <div class="row">
                     <div class="col-12">
                        <nav class="d-flex flex-column flex-md-row flex-md-wrap justify-content-around align-items-start align-items-md-center border-top">
-                           <a class="nav-link" href="https://{{theme-setting 'site_abbreviation_lower'}}{{theme-setting 'laruta_environment'}}/{{theme-setting 'laruta_copyright_url'}}">Copyright</a>
-                           <a class="nav-link" href="https://{{theme-setting 'site_abbreviation_lower'}}{{theme-setting 'laruta_environment'}}/{{theme-setting 'laruta_privacy_policy_url'}}">Privacy Policy</a>
+                           <a class="nav-link" href="https://{{theme-setting 'site_url'}}/{{theme-setting 'laruta_copyright_url'}}">Copyright</a>
+                           <a class="nav-link" href="https://{{theme-setting 'site_url'}}/{{theme-setting 'laruta_privacy_policy_url'}}">Privacy Policy</a>
                        </nav>
                     </div>
                 </div>
