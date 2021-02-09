@@ -2405,6 +2405,7 @@ li[data-value="all-categories"] {
 }
 
 
+// Color fixes for discourse upgrades
 .d-header-icons .d-icon {
   color: #888 !important;
 }
@@ -2413,6 +2414,10 @@ li[data-value="all-categories"] {
     color: #fff !important;
 }
 
-.widget-button {
+body .widget-button {
   color: #fff !important;
+}
+
+.user-menu .quick-access-panel li.do-not-disturb {
+  background: none !important;
 }
