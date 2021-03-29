@@ -8,12 +8,6 @@
 
 
 
-
-
-
-
-
-
 /***************************
 *
 *
@@ -2408,4 +2402,22 @@ li[data-value="all-categories"] {
 .staff .about.stats,
 .staff .about.admins {
     display: none !important;
+}
+
+
+// Color fixes for discourse upgrades
+.d-header-icons .d-icon {
+  color: #888 !important;
+}
+
+.menu-links-header button.widget-button {
+    color: #fff !important;
+}
+
+body .logout .widget-button {
+  color: #fff !important;
+}
+
+.user-menu .quick-access-panel li.do-not-disturb {
+  background: none !important;
 }
